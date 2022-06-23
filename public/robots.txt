@@ -1,0 +1,20 @@
+User-agent: *
+Allow: 
+User-agent: Googlebot
+Allow: 
+User-agent: AdsBot-Google
+Allow:
+User-agent: Googlebot-Image
+Disallow:
+
+User-agent: *
+Disallow: /images/others/
+
+User-agent: *
+Disallow: /images/banner/
+
+User-agent: *
+Disallow: /images/about/
+
+Sitemap: https://ds3i.com.br/sitemap.xml
+Sitemap: http://www.ds3i.com.br/sitemap.xml

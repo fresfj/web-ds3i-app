@@ -1,0 +1,164 @@
+[
+    {
+        "image": "/images/icon/icon-32.png",
+        "webp": "/images/icon/icon-32.webp",
+        "title": "Aplicativos",
+        "description": "Desenvolvemos aplicativos de alta qualidade e performance para Android e iOS.",
+        "cate": "Development"
+    },
+    {
+        "image": "/images/icon/icon-27.png",
+        "webp": "/images/icon/icon-27.webp",
+        "title": "Sites e sistemas",
+        "description": "Desenvolvemos landing pages, sites responsivos, sistemas e aplicativos web.",
+        "cate": "Development"
+    },
+    {
+        "image": "/images/icon/icon-28.png",
+        "webp": "/images/icon/icon-28.webp",
+        "title": "Design app",
+        "description": "Desenvolvemos e planejamos o layout certo para o seu aplicativo.",
+        "cate": "Design"
+    },
+    {
+        "image": "/images/icon/icon-41.png",
+        "webp": "/images/icon/icon-41.webp",
+        "title": "Interfaces",
+        "description": "Desenvolvemos API`s de integrações e comunicação entre sistema, protótipos e estudo de usabilidade para o seu projeto.",
+        "cate": "Development"
+    },
+    {
+        "image": "/images/icon/icon-33.png",
+        "webp": "/images/icon/icon-33.webp",
+        "title": "E-commerce",
+        "description": "Soluções para loja virtual de alta performance, desenvolvimento personalizado, gestão de produtos, integrações e vendas.",
+        "cate": "Development"
+    },
+    {
+        "image": "/images/icon/icon-40.png",
+        "webp": "/images/icon/icon-40.webp",
+        "title": "Consultoria",
+        "description": "Oferecemos uma consultoria completa na criação de novos projetos digitais, apoiamos nossos clientes no desenvolvimento.",
+        "cate": "Business"
+    },
+    {
+        "image": "/images/icon/icon-1.png",
+        "webp": "/images/icon/icon-1.webp",
+        "title": "Design",
+        "description": "Criação de identidade visual própria e inovadora com base em conceitos, pesquisas e prototipações de produtos exclusivos para sua empresa."
+    },
+    {
+        "image": "/images/icon/icon-2.png",
+        "webp": "/images/icon/icon-2.webp",
+        "title": "Desenvolvimento",
+        "description": "Desenvolvemos soluções sobre demandas para atender e solucionar problema de sistema existente com manutenção e melhoria contínua."
+    },
+    {
+        "image": "/images/icon/icon-3.png",
+        "webp": "/images/icon/icon-3.webp",
+        "title": "Marketing Digital",
+        "description": "Desenvolvemos estratégias de marketing viral, growth hacking, e marketing digital com foco em produtos digitais, criamos campanhas engajadas."
+    },
+    {
+        "image": "/images/icon/icon-5.png",
+        "webp": "/images/icon/icon-5.webp",
+        "title": "Tecnologias",
+        "description": "Identificamos a mlehor tecnologia para o seu projeto. Para tirar o máximo proveito dessas tecnologias, ferramentas e frameworks preferenciais utilizadas na SeTIC e recomendadas para o desenvolvimento de aplicações web e app."
+    },
+    {
+        "image": "/images/icon/icon-6.png",
+        "webp": "/images/icon/icon-6.webp",
+        "title": "Content strategy",
+        "description": "Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library."
+    },
+    {
+        "image": "/images/icon/icon-4.png",
+        "webp": "/images/icon/icon-4.webp",
+        "title": "Business",
+        "description": "Oferecemos uma consultoria completa na criação de novos projetos digitais, através do design thinking apoiamos nossos clientes no desenvolvimento."
+    },
+    {
+        "image": "/images/icon/icon-29.png",
+        "webp": "/images/icon/icon-29.webp",
+        "title": "Logo & Branding",
+        "description": "Tudo começa na marca. Ajudamos organizações a se posicionarem dentro dos seus propósitos: da estratégia à linguagem e expressão visual de todos os pontos de contato. Sempre buscando criar os diferenciais da marca e trazê-los à tona, aliado aos objetivos do negócio e às mais novas tecnologias e tendências.",
+        "cate": "Design"
+    },
+    {
+        "image": "/images/icon/icon-45.png",
+        "webp": "/images/icon/icon-45.webp",
+        "title": "Auditoria Web",
+        "description": "Uma auditoria do site é feita para identificar uma ampla gama de problemas do site. Ele determina se o seu site está totalmente otimizado para o tráfego do mecanismo de pesquisa, tem arquivos ou links quebrados, carrega rapidamente, é fácil de usar e tem conteúdo de alto nível.",
+        "cate": "Content strategy"
+    },
+    {
+        "image": "/images/icon/icon-34.png",
+        "webp": "/images/icon/icon-34.webp",
+        "title": "SEO",
+        "description": "Melhore o seu posicionamento na busca orgânica otimizando suas páginas on-line com estratégias de SEO focadas no negócio. Agilidade, responsividade, melhor experiência do usuário.",
+        "cate": "Online Marketing"
+    },
+    {
+        "image": "/images/icon/icon-36.png",
+        "webp": "/images/icon/icon-36.webp",
+        "title": "AI Captação",
+        "description": "Melhore o seu processo de captação utilizando recursos de Inteligência Artificial para identificar padrões e determinar as melhores estratégias para investir em leads com maior potencial de se tornarem alunos.",
+        "cate": "Online Marketing"
+    },
+    {
+        "image": "/images/icon/icon-37.png",
+        "webp": "/images/icon/icon-37.webp",
+        "title": "Marketing de Conteúdo",
+        "description": "Otimize sua estratégia de vendas para entregar ao seu público exatamente o que ele procura. Conquiste até 3x mais leads em relação ao tráfego pago. Qualifique os seus leads para o call center.",
+        "cate": "Online Marketing"
+    },
+    {
+        "image": "/images/icon/icon-38.png",
+        "webp": "/images/icon/icon-38.webp",
+        "title": "Social Media",
+        "description": "Planejamos e criamos conteúdos para serem compartilhados nas redes sociais. Também publicamos dentro das plataformas, interagimos com os usuários, analisa resultados e fazemos tudo acontecer.",
+        "cate": "Online Marketing"
+    },
+    {
+        "image": "/images/icon/icon-39.png",
+        "webp": "/images/icon/icon-39.webp",
+        "title": "Estratégia Digital",
+        "description": "Um dos fatores determinantes do sucesso de uma empresa é a combinação de clareza e consistência da marca. Em termos de marketing, é crucial desenvolver uma proposta de valor clara que se alinhe com a identidade do produto e da marca.",
+        "cate": "Business"
+    },
+    {
+        "image": "/images/icon/icon-42.png",
+        "webp": "/images/icon/icon-42.webp",
+        "title": "Mensageria",
+        "description": "Personalize a comunicação com seu cliente a cada interação, torne-se mais presente e transforme a experiência dos seus clientes",
+        "cate": "Business"
+    },
+    {
+        "image": "/images/icon/icon-43.png",
+        "webp": "/images/icon/icon-43.webp",
+        "title": "Hosting",
+        "description": "Com o Firebase Hosting, você pode implantar facilmente um app da Web de uma só página, uma página de destino de apps para dispositivos móveis ou um Progressive Web App.",
+        "cate": "Technology"
+    },
+    {
+        "image": "/images/icon/icon-44.png",
+        "webp": "/images/icon/icon-44.webp",
+        "title": "Big Data Analysis",
+        "description": "Estratégias de tageamento utilizando Google Tag Manager e visualizando no GA. Medir e otimizar a eficácia do marketing (SEM, SEO, e-mail, display, social, etc.).",
+        "cate": "Technology"
+    },
+    {
+        "image": "/images/icon/icon-46.png",
+        "webp": "/images/icon/icon-46.webp",
+        "title": "Inteligência Artificial",
+        "description": "Hoje a briga é por informações que lhe tragam respostas rápidas e assertivas, somente com IA é possível analisar/aprender com dados e tirar conclusões/decisões que para humanos seria impossíveis ou altamente custosas.",
+        "cate": "Content strategy"
+    },
+    {
+        "image": "/images/icon/icon-47.png",
+        "webp": "/images/icon/icon-47.webp",
+        "title": "Publicidade Online",
+        "description": "Promover a divulgação da sua marca, serviço ou negócio. Essa divulgação pode ser feita por intermédio das redes sociais, site, e-mails, aplicativos, jornal online. Pois, um bom relacionamento com o cliente começa com uma boa comunicação.",
+        "cate": "Content strategy"
+    }
+]

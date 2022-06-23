@@ -1,0 +1,49 @@
+{
+  "name": "DS3I Desenvolvimento Aplicativo e Sites",
+  "short_name": "DS3I",
+  "description": "Desenvolvimento de Aplicativos e Sites",
+  "display": "standalone",
+  "orientation": "portrait",
+  "lang": "pt-BR",
+  "scope": "/",
+  "start_url": "/",
+  "display_override": [
+    "window-control-overlay",
+    "minimal-ui"
+  ],
+  "theme_color": "#454394",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "id": "br.com.ds3i.app"
+    }
+  ]
+}

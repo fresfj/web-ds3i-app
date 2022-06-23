@@ -1,0 +1,17 @@
+[
+    {
+        "thumb": "/images/others/Rio.svg",
+        "title": "Rio de Janeiro - RJ",
+        "address": "46 Watsica Creek Suite 071 United States"
+    },
+    {
+        "thumb": "/images/others/Curitiba.svg",
+        "title": "Curitiba - PR",
+        "address": "7140 Wehner Tunnel Washington, D.C"
+    },
+    {
+        "thumb": "/images/others/SaoPaulo.svg",
+        "title": "São Paulo - SP",
+        "address": "10 Maggie Valleys United States"
+    }
+]

@@ -1,0 +1,224 @@
+[
+    {
+        "q": "Qual tipo de aplicativo você está procurando?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Aplicativo para iPhone",
+                "price": "$$",
+                "value": 100000
+            },
+            {
+                "text": "Aplicativo para Android",
+                "price": "$$",
+                "value": 100000
+            },
+            {
+                "text": "Aplicativo para iPhone e Android",
+                "price": "$$$",
+                "value": 120000
+            }
+        ]
+    },
+    {
+        "q": "Que nível de qualidade de construção você está procurando?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Interações básicas, performance baixa",
+                "price": "$",
+                "value": 5000
+            },
+            {
+                "text": "Interações customizadas, alta performance",
+                "price": "$$$",
+                "value": 15000
+            }
+        ]
+    },
+    {
+        "q": "Qual design você deseja que o seu aplicativo tenha?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Sem customização",
+                "price": "$",
+                "value": 0
+            },
+            {
+                "text": "Interface básica",
+                "price": "$$",
+                "value": 5000
+            },
+            {
+                "text": "Interface customizada",
+                "price": "$$$",
+                "value": 20000
+            }
+        ]
+    },
+    {
+        "q": "Como será o retorno financeiro do seu aplicativo?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Aplicativo gratuito",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Aplicativo pago para baixar",
+                "price": "$",
+                "value": 2000
+            },
+            {
+                "text": "Compras dentro do aplicativo",
+                "price": "$$$",
+                "value": 15000
+            }
+        ]
+    },
+    {
+        "q": "Seu aplicativo precisa de cadastro e login?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Não",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Sim, apenas com email",
+                "price": "$",
+                "value": 5000
+            },
+            {
+                "text": "Sim, com redes sociais e email",
+                "price": "$$$",
+                "value": 15000
+            }
+        ]
+    },
+    {
+        "q": "Seu aplicativo precisa de integração com alguma plataforma ou site?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Não",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Sim",
+                "price": "$$$",
+                "value": 15000
+            }
+        ]
+    },
+    {
+        "q": "Os usuários devem ter seu perfil próprio?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Não",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Sim",
+                "price": "$$",
+                "value": 5000
+            }
+        ]
+    },
+    {
+        "q": "Seu aplicativo vai enviar notificações para os usuários?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Não",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Sim",
+                "price": "$$",
+                "value": 15000
+            }
+        ]
+    },
+    {
+        "q": "Seu aplicativo vai precisar usar a localização dos seus usuários?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Não",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Sim",
+                "price": "$$$",
+                "value": 12000
+            }
+        ]
+    },
+    {
+        "q": "Seu aplicativo necessita de um painel administrativo?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Não",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Sim",
+                "price": "$$$",
+                "value": 20000
+            }
+        ]
+    },
+    {
+        "q": "Quantas línguas você deseja que seu aplicativo tenha?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Uma única língua",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Bilingue",
+                "price": "$",
+                "value": 30000
+            },
+            {
+                "text": "Multiplos idiomas",
+                "price": "$$",
+                "value": 50000
+            }
+        ]
+    },
+    {
+        "q": "Em que estágio se encontra o seu projeto?",
+        "userAnswer": "",
+        "a": [
+            {
+                "text": "Apenas tenho ideia ou esboço",
+                "price": "Sem custo",
+                "value": 0
+            },
+            {
+                "text": "Aplicativo em desenvolvimento",
+                "price": "$$$",
+                "value": 0
+            },
+            {
+                "text": "Aplicativo já está pronto",
+                "price": "$$$",
+                "value": 0
+            }
+        ]
+    }
+]
