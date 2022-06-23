@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "thumb": "/images/others/app.png",
+        "webp": "/images/others/app.webp",
+        "subtitle": "Mobile",
+        "title": "Desenvolvimento de aplicativo",
+        "paragraph": "Desenvolvemos aplicativos feitos sob medida para sua necessidade, empresa ou ideia."
+    },
+    {
+        "id": 2,
+        "thumb": "/images/others/web.png",
+        "webp": "/images/others/web.webp",
+        "subtitle": "Web",
+        "title": "Desenvolvimento de web",
+        "paragraph": "Desenvolvemos sistemas web feitos sob medida para sua necessidade, desde de aplicações inteiras, redes sociais, plataformas de gestão para empresas até simples sites."
+    },
+    {
+        "id": 3,
+        "thumb": "/images/others/backend.png",
+        "webp": "/images/others/backend.webp",
+        "subtitle": "Back-End & API",
+        "title": "Desenvolvimento Backend",
+        "paragraph": "Desenvolvimento de API em NodeJS ou PHP para integração com aplicativos. Tudo que o seu aplicativo precisa para funcionar plenamente na nuvem: infraestrutura completa de banco de dados, servidores, APIs, etc."
+    },
+    {
+        "id": 4,
+        "thumb": "/images/others/design.png",
+        "webp": "/images/others/design.webp",
+        "subtitle": "Design",
+        "title": "Estudo e criação de interfaces",
+        "paragraph": "Todo projeto de um edifício precisa de uma 'planta' para saber exatamente onde as coisas devem ser construidas. No mundo do desenvolvimento as coisas não são diferentes. Estudamos e criamos interfaces complexas, analizando sempre qual será o fluxo mais intuitivo para o usuário final."
+    }
+]

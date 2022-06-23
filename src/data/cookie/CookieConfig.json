@@ -1,0 +1,45 @@
+{
+  "policies": [
+    {
+      "id": "essential",
+      "label": "Cookies Essencial",
+      "description": "Precisamos salvar alguns cookies técnicos, para que o site funcione corretamente.",
+      "category": "essential"
+    },
+    {
+      "id": "functional",
+      "label": "Cookies Funcionais",
+      "category": "functional",
+      "description": "Precisamos salvar algumas preferências básicas, por exemplo. Idioma e Color do Thema."
+    },
+    {
+      "id": "statistics",
+      "label": "Statistics",
+      "category": "statistics",
+      "description": "Precisamos salvar alguns cookies técnicos, para que o site funcione corretamente."
+    },
+    {
+      "id": "social",
+      "label": "Social Media Cookies",
+      "category": "social",
+      "description": "Precisamos salvar alguns cookies técnicos, para que o site funcione corretamente."
+    }
+  ],
+  "essentialLabel": "Aplicar on",
+  "permissionLabels": {
+    "accept": "Aceitar",
+    "acceptAll": "Aceitar",
+    "decline": "Rejeitar"
+  },
+  "cookiePreferenceKey": "cookie-preferences",
+  "header": {
+    "title": "Utilizamos cookies",
+    "subTitle": "",
+    "description": "Para oferecer melhor experiência, melhorar o desempenho, analisar como você interage em nosso site e personalizar conteúdo. Ao continuar navegando, você concorda e declara que estar ciente dessas condições de uso de cookies."
+  },
+  "cookiePolicy": {
+    "url": "/privacy-policy/",
+    "label": "Leia a declaração completa do cookie"
+  },
+  "customizeLabel": "Customizar"
+}
