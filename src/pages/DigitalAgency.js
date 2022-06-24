@@ -19,7 +19,7 @@ const DigitalAgency = () => {
 
     return (
         <>
-        <SEO title="Desenvolvimento de sites e aplicativos"/>
+        <SEO title="Desenvolvimento de sites e aplicativos -- Alteração"/>
         <ColorSwitcher />
         <main className="main-wrapper">
             <LazyLoad height={200} offset={[-100, 0]} once ><HeaderOne /></LazyLoad>
