@@ -8,6 +8,7 @@ import SectionTitle from '../elements/section-title/SectionTitle';
 import CalculatorData from "../data/calculator/CalculatorData.json";
 import { FaInfoCircle } from "react-icons/fa";
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { motion } from "framer-motion/dist/framer-motion"
 import LazyLoad from 'react-lazyload';
 import Image from 'react-image-webp';
 const FormOne = loadable(() => import('../component/contact/FormOne'));
@@ -18,9 +19,13 @@ const Calculator = () => {
     const [showScore, setShowScore] = useState(false);
     const [summedValues] = useState([]);
     const [values, setValues] = useState(0);
+    const [currentQuestion, setCurrentQuestion] = useState(0);
+
     const startQuiz = () => setStart(!start)
 
-    const [currentQuestion, setCurrentQuestion] = useState(0);
+    const restQuiz = () => {
+        window.location.reload()
+    }
 
     const handleAnswerButtonClick = ( data ) => {
         if(data.value > 0){
@@ -39,6 +44,19 @@ const Calculator = () => {
         let price = parseFloat(value)
         let type = cifrao ? 'currency' : 'decimal'
         return new Intl.NumberFormat('pt-BR', { style: type, currency: 'BRL' }).format(price)
+    }
+    const [active, setActive] = useState(false);
+    const cardQuestion = {
+        active: {
+            scale: [0, 0.4, 1],
+            opacity:  [0, 0, 1],
+            transition: { duration: 1, when: "beforeChildren", staggerChildren: 0.3}
+        },
+        disabled: {
+            scale: [0, 0.4, 1],
+            opacity:  [0, 0, 1],
+            transition: { duration: 1 }
+        }
     }
     return (
         <>
@@ -85,7 +103,7 @@ const Calculator = () => {
                                         <h4 className="title fw-bold">a partir de <span className='text-success'>{getFormattedPrice(values)}</span></h4>
                                         <span className="subtitle">Baseado nas suas respostas conseguimos levantar o custo estimado para iniciar o desenvolvimento do seu aplicativo, para saber mais informações e tirar dúvidas, entre em contato com a gente através do formulário ou chama no whats.</span>
                                     </div>
-                                    <button onClick={startQuiz} className="axil-btn btn-fill-primary">Recomeçar o calculo</button>
+                                    <button onClick={restQuiz} className="axil-btn btn-fill-primary">Recomeçar o calculo</button>
                                 </AnimationOnScroll>
                                 </div>
                                 <div className="col-xl-5 col-lg-6 offset-xl-1">
@@ -99,17 +117,19 @@ const Calculator = () => {
                             </div>
                         : 
                         <div className="container">
-                            <SectionTitle 
-                                subtitle="Orçamento"
-                                title={allData[currentQuestion].q}
-                                textAlignment="heading-left mb--40"
-                                textColor=""
-                            />
+                            <motion.div key={active ? active : "empty"}>
+                                <SectionTitle 
+                                    subtitle="Orçamento"
+                                    title={allData[currentQuestion].q}
+                                    textAlignment="heading-left mb--40"
+                                    textColor=""
+                                />
+                            </motion.div>
                             <div className="row justify-content-center">
                             {allData[currentQuestion].a.map((answerOption, index) => (
-                                <div className="col-xl-3 col-lg-4" key={index}>
+                                <motion.div className="col-xl-4 col-lg-4" key={index} variants={cardQuestion} animate={active ? "active":"disabled"} onClick={() => setActive(!active)}>
                                     <div className="support-box support-ticket splash-hover-control">
-                                    <a className='hover-shadow' href='#nolink' onClick={() =>handleAnswerButtonClick(answerOption)}>
+                                    <span className='hover-shadow' onClick={() =>handleAnswerButtonClick(answerOption)}>
                                         <div className='inner'>
                                         <div className="content">
                                             <div className="heading">
@@ -118,10 +138,10 @@ const Calculator = () => {
                                             <p>{answerOption.price}</p>
                                         </div>
                                         </div>
-                                    </a>
+                                    </span>
                                     </div>
-                                </div>
-                            ))} 
+                                </motion.div>
+                            ))}
                             <div className="col-lg-10">
                                 <p className='d-inline-flex px-2 py-1 fw-semibold text-warning bg-warning bg-opacity-10 border border-warning border-opacity-10 rounded-2'><FaInfoCircle className='mt-1 me-2' /> Selecione uma das opções acima para prosseguir.</p>
                             </div>

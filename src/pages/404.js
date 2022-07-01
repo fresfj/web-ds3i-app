@@ -19,9 +19,10 @@ const ErrorPage = () => {
                         <div className="col-lg-6">
                         <AnimationOnScroll  animateIn="slideInUp" duration={1} delay={300} animateOnce={true}>
                             <div className="content">
-                                <h2 className="title">Page not found</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                                <Link to={process.env.PUBLIC_URL + "/"} className="axil-btn btn-fill-primary">Go Back</Link>
+                                <h1 className="title">Page not found</h1>
+                                <h4 className="subtitle">Não se assuste.</h4>
+                                <p>A página que você está procurando caiu em um reino desconhecido. Clique no botão abaixo para voltar à página inicial.</p>
+                                <Link to={process.env.PUBLIC_URL + "/"} className="axil-btn btn-fill-primary">Voltar para o conhecido</Link>
                             </div>
                         </AnimationOnScroll>
                         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import SectionTitle from '../../elements/section-title/SectionTitle';
 import ProjectPropTwo from './itemProp/ProjectPropTwo';
 import ProjectData from "../../data/project/ProjectData.json";
+import { motion } from "framer-motion/dist/framer-motion"
 import { FaApple, FaGooglePlay } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import Image from 'react-image-webp';
@@ -9,7 +10,22 @@ import LazyLoad from 'react-lazyload';
 import Tilty from 'react-tilty';
 const portfolioData = ProjectData;
 
+
 const ProjectFour = () => {
+    const cardVariants = {
+        offscreen: {
+          y: 300
+        },
+        onscreen: {
+          y: 50,
+          rotate: -10,
+          transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8
+          }
+        }
+    }
     return (
         <div className="section section-padding-equal bg-color-dark">
             <div className="container">
@@ -20,6 +36,11 @@ const ProjectFour = () => {
                 textAlignment="heading-light-left mb--90"
                 textColor=""
             />
+        <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+        >
             <div className="project-add-banner banner-elux">
                 <div className="content">
                     <div className="brand-logo mb-4">
@@ -31,12 +52,20 @@ const ProjectFour = () => {
                     <Link className='d-inline-flex me-3 mb-3 px-3 py-2 fw-semibold text-white bg-dark bg-opacity-90 border border-dark border-opacity-10 rounded-3' to="https://facebook.com/"><FaApple className='mt-1 mx-1' /> App Store</Link>
                     <Link className='d-inline-flex mb-3 px-3 py-2 fw-semibold text-white bg-dark bg-opacity-90 border border-dark border-opacity-10 rounded-3' to="https://facebook.com/"><FaGooglePlay className='mt-1 mx-1' /> Google Play</Link>
                 </div>
-                <div className="thumbnail">
-                <Tilty perspective={3000}>
-                <LazyLoad height={200}><Image width={550} height={632} webp={process.env.PUBLIC_URL + "/images/project/EluxMockup.webp"} src={process.env.PUBLIC_URL + "/images/project/EluxMockup.png"} alt="Mockup" /></LazyLoad>
-                </Tilty>
-                </div>
+                <motion.div variants={cardVariants}>
+                    <div className="thumbnail">
+                    <Tilty perspective={3000}>
+                    <LazyLoad height={200}><Image width={550} height={632} webp={process.env.PUBLIC_URL + "/images/project/EluxMockup.webp"} src={process.env.PUBLIC_URL + "/images/project/EluxMockup.png"} alt="Mockup" /></LazyLoad>
+                    </Tilty>
+                    </div>
+                </motion.div>
             </div>
+            </motion.div>
+        <motion.div
+            initial="offscreen"
+            whileInView="onscreen"
+            viewport={{ once: true, amount: 0.8 }}
+        >
             <div className="project-add-banner banner-agro">
                 <div className="content">
                     <div className="brand-logo mb-4">
@@ -48,12 +77,15 @@ const ProjectFour = () => {
                     <Link className='d-inline-flex me-3 mb-3 px-3 py-2 fw-semibold text-white bg-dark bg-opacity-90 border border-dark border-opacity-10 rounded-3' to="https://facebook.com/"><FaApple className='mt-1 mx-1' /> App Store</Link>
                     <Link className='d-inline-flex mb-3 px-3 py-2 fw-semibold text-white bg-dark bg-opacity-90 border border-dark border-opacity-10 rounded-3' to="https://facebook.com/"><FaGooglePlay className='mt-1 mx-1' /> Google Play</Link>
                 </div>
-                <div className="thumbnail">
-                    <Tilty perspective={3000}>
-                    <LazyLoad height={200}><Image width={550} height={632} webp={process.env.PUBLIC_URL + "/images/project/Agro.webp"} src={process.env.PUBLIC_URL + "/images/project/Agro.png"} alt="Mockup" /></LazyLoad>
-                    </Tilty>
-                </div>
+                <motion.div variants={cardVariants}>
+                    <div className="thumbnail">
+                        <Tilty perspective={3000}>
+                        <LazyLoad height={200}><Image width={550} height={632} webp={process.env.PUBLIC_URL + "/images/project/Agro.webp"} src={process.env.PUBLIC_URL + "/images/project/Agro.png"} alt="Mockup" /></LazyLoad>
+                        </Tilty>
+                    </div>
+                </motion.div>
             </div>
+        </motion.div>            
             <div className="row row-45">
                 {portfolioData.slice(12, 16).map((data) => (
                     <div className="col-md-6" key={data.id}>

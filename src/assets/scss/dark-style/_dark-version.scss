@@ -1320,14 +1320,18 @@
     }
 
     .support-box {
-        a {
+
+        a,
+        span {
             background-color: var(--dark-main-body);
             border-color: var(--dark-main-body);
         }
 
         &:hover,
         &.active {
-            a {
+
+            a,
+            span {
                 box-shadow: 0 50px 50px -24px rgba(1, 1, 1, 0.3);
             }
         }

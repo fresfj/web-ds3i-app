@@ -2,6 +2,7 @@ import React, { memo } from 'react';
 import loadable from '@loadable/component'
 import Image from 'react-image-webp';
 import LazyLoad from 'react-lazyload';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 const FormOne = loadable(() => import('../contact/FormOne'))
 
 const AboutOne = () => {
@@ -10,6 +11,7 @@ const AboutOne = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-6">
+                    <AnimationOnScroll animateIn="slideInLeft" duration={1} delay={300} animateOnce={true}>
                         <div className="about-us">
                             <div className="section-heading heading-left mb-0">
                                 <span className="subtitle">Quem somos?</span>
@@ -18,13 +20,16 @@ const AboutOne = () => {
                                 <p>Nossa equipe é a melhor porque nós amamos o que fazemos e entregamos produtos memorável.</p>
                             </div>
                         </div>
+                    </AnimationOnScroll>
                     </div>
 
                     <div className="col-xl-5 col-lg-6 offset-xl-1">
-                        <div className="contact-form-box">
-                            <h3 className="title">Vamos conversar e transformar sua ideia em algo memorável.</h3>
-                            <LazyLoad height={200} offset={[-100, 0]} once ><FormOne /></LazyLoad>
-                        </div>
+                        <AnimationOnScroll animateIn="zoomIn" duration={1} delay={300} animateOnce={true}>
+                            <div className="contact-form-box">
+                                <h3 className="title">Vamos conversar e transformar sua ideia em algo memorável.</h3>
+                                <LazyLoad height={200} offset={[-100, 0]} once ><FormOne /></LazyLoad>
+                            </div>
+                        </AnimationOnScroll>
                     </div>
                 </div>
             </div>

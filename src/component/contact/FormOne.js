@@ -82,8 +82,8 @@ const FormOne = ( { data = null } ) => {
             <div className="invalid-feedback">{errors.contactPhone && errors.contactPhone.message}</div>
         </div>
         <div className="form-group mb-3 float-start">
-            <input type="checkbox" class={`form-check-input form-control ${errors.contactPrivacy ? 'is-invalid' : ''}`} {...register('contactPrivacy')} name="contactPrivacy" id="privacy-policy"/>
-            <label className="form-check-label" for="privacy-policy">Eu aceito os <strong>Termos</strong> da <Link to={process.env.PUBLIC_URL + "/privacy-policy/"}>Política de Privacidade</Link></label>
+            <input type="checkbox" className={`form-check-input form-control ${errors.contactPrivacy ? 'is-invalid' : ''}`} {...register('contactPrivacy')} name="contactPrivacy" id="privacy-policy"/>
+            <label className="form-check-label" htmlFor="privacy-policy">Eu aceito os <strong>Termos</strong> da <Link to={process.env.PUBLIC_URL + "/privacy-policy/"}>Política de Privacidade</Link></label>
             <div className="invalid-feedback">{errors.contactPrivacy && errors.contactPrivacy.message}</div>
         </div>
         <div className="form-group">

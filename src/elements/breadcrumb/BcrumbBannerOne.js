@@ -1,13 +1,17 @@
 import React from 'react';
 import Tilty from 'react-tilty';
-
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 const BcrumbBannerOne = ({title, paragraph, styleClass, mainThumb}) => {
     return (
         <div className="breadcrum-area breadcrumb-banner">
             <div className="container">
                 <div className="section-heading heading-left">
-                    <h1 className="title h2" dangerouslySetInnerHTML={{__html: title}}></h1>
-                    <p dangerouslySetInnerHTML={{__html: paragraph}}></p>
+                    <AnimationOnScroll  animateIn="fadeIn" duration={1} delay={200} animateOnce={true}>
+                        <h1 className="title h2" dangerouslySetInnerHTML={{__html: title}}></h1>
+                    </AnimationOnScroll>
+                    <AnimationOnScroll  animateIn="fadeInUp" duration={1} delay={300} animateOnce={true}>
+                        <p dangerouslySetInnerHTML={{__html: paragraph}}></p>
+                    </AnimationOnScroll>
                 </div>
                 <div className={`banner-thumbnail ${styleClass}`}>
                     <Tilty perspective={2000} reset={false}>

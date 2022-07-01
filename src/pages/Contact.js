@@ -6,9 +6,10 @@ import FooterOne from '../common/footer/FooterOne';
 import HeaderOne from '../common/header/HeaderOne';
 import BreadCrumbOne from '../elements/breadcrumb/BreadCrumbOne';
 import SectionTitle from '../elements/section-title/SectionTitle';
-import ContactLocation from '../component/contact/ContactLocation';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import LazyLoad from 'react-lazyload';
 const FormTwo = loadable(() => import('../component/contact/FormTwo'));
+const ContactLocation = loadable(() => import('../component/contact/ContactLocation'));
 const Contact = () => {
     return (
         <>
@@ -25,22 +26,28 @@ const Contact = () => {
                 <div className="container">
                     <div className="row">
                         <div className="col-xl-5 col-lg-6">
+                            <AnimationOnScroll  animateIn="zoomIn" duration={1} delay={300} animateOnce={true}>
                             <div className="contact-form-box shadow-box mb--30">
                                 <h3 className="title">Vamos criar algo extraordinário juntos</h3>
                                 <LazyLoad height={200} offset={[-100, 0]} once ><FormTwo /></LazyLoad>
                             </div>
+                            </AnimationOnScroll>
                         </div>
                         <div className="col-xl-5 col-lg-6 offset-xl-1">
+                            <AnimationOnScroll  animateIn="fadeInRightBig" duration={1} delay={300} animateOnce={true}>
                             <div className="contact-info mb--100 mb_md--30 mt_md--0 mt--150">
                                 <h4 className="title">Telefone</h4>
                                 <p>Nosso atendimento ao cliente está aberto de segunda a sexta, das 09h às 18h</p>
                                 <h4 className="phone-number"><a href="tel:+5541999601055">(41) 99960 1055</a></h4>
                             </div>
+                            </AnimationOnScroll>
+                            <AnimationOnScroll  animateIn="fadeInRightBig" duration={1} delay={300} animateOnce={true}>
                             <div className="contact-info mb--30">
                                 <h4 className="title">Email</h4>
                                 <p>Nossa equipe de suporte retornará em 48 horas durante o horário comercial padrão.</p>
                                 <h4 className="phone-number"><a href="mailto:suporte@ds3i.com.br">suporte@ds3i.com.br</a></h4>
                             </div>
+                            </AnimationOnScroll>
                         </div>
                     </div>
                 </div>
@@ -69,7 +76,7 @@ const Contact = () => {
                     <li className="shape shape-2"><img src={process.env.PUBLIC_URL + "/images/others/circle-3.png"} alt="line" /></li>
                 </ul>
             </div>
-            <LazyLoad height={200} offset={[-100, 0]} once ><FooterOne parentClass="pt--150 pt_lg--100 pt_md--80 pt_sm--60" /></LazyLoad>
+                <LazyLoad height={200} offset={[-100, 0]} once ><FooterOne parentClass="pt--150 pt_lg--100 pt_md--80 pt_sm--60" /></LazyLoad>
             </main>
         </>
     )

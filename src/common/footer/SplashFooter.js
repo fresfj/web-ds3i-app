@@ -11,7 +11,7 @@ const SplashFooter = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-5">
                             <div className="footer-copyright">
-                            Desenvolvido com <img className="heart-icon" alt="Amor" src="https://code-assets-0.whjr.online/images/icons/red-heart.svg" /> por equipe DS3I
+                            <span className="copyright-text">Desenvolvido com <img className="heart-icon" alt="Amor" src={process.env.PUBLIC_URL + "/images/icon/red-heart.svg"} /> pela equipe ds3i</span>
                                 <span className="copyright-text">© {new Date().getFullYear()}. All rights reserved by <a href="https://ds3i.com.br/">DS3I - Desenvolvimento Inteligente</a></span>
                             </div>
                         </div>
@@ -24,8 +24,8 @@ const SplashFooter = () => {
                         <div className="col-lg-5">
                         <div className="footer-bottom-link">
                             <ul className="list-unstyled">
-                                <li><Link to={process.env.PUBLIC_URL + "/privacy-policy"}>Política de Privacidade</Link></li>
-                                <li><Link to={process.env.PUBLIC_URL + "/terms-use"}>Termos de Uso</Link></li>
+                                <li><Link to={process.env.PUBLIC_URL + "/privacy-policy/"}>Política de Privacidade</Link></li>
+                                <li><Link to={process.env.PUBLIC_URL + "/terms-use/"}>Termos de Uso</Link></li>
                             </ul>
                         </div>
                         </div>

@@ -122,7 +122,7 @@ const FooterOne = ({parentClass}) => {
                     <div className="row">
                         <div className="col-md-6">
                             <div className="footer-copyright">
-                                <span className="copyright-text">Desenvolvido com <img className="heart-icon" alt="Amor" src="https://code-assets-0.whjr.online/images/icons/red-heart.svg" width={17} height={16} /> pela equipe ds3i</span>
+                                <span className="copyright-text">Desenvolvido com <img className="heart-icon" alt="Amor" src={process.env.PUBLIC_URL + "/images/icon/red-heart.svg"} width={17} height={16} /> pela equipe ds3i</span>
                                 <span className="copyright-text">© {new Date().getFullYear()}. All rights reserved by <a href="https://ds3i.com.br/">DS3I - Desenvolvimento Inteligente</a></span>
                             </div>
                         </div>

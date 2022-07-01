@@ -134,7 +134,7 @@ const FormBudget = ( { data } ) => {
                 <div className="form-group col-sm-12 col-md-6" key={index}>
                     <div className="form-check form-switch" onChange={handleCheck}>
                         <input className={`form-check-input ${errors.contactChecks ? 'is-invalid' : ''}`} {...register('contactChecks')} type="checkbox" value={item.title} id={index} />
-                        <label className="form-check-label" for={index}> {item.title} <span>({item.sub})</span></label>
+                        <label className="form-check-label" htmlFor={index}> {item.title} <span>({item.sub})</span></label>
                         { (index+1)===checkList.length &&
                         <div className={`invalid-feedback`}>{errors.contactChecks && errors.contactChecks.message}</div>}
                     </div>
@@ -186,8 +186,8 @@ const FormBudget = ( { data } ) => {
             <div className="invalid-feedback">{errors.contactConheu && errors.contactConheu.message}</div>
         </div>
         <div className="form-group mb-3 float-start">
-            <input type="checkbox" class={`form-check-input form-control ${errors.contactPrivacy ? 'is-invalid' : ''}`} {...register('contactPrivacy')} name="contactPrivacy" id="privacy-policy"/>
-            <label className="form-check-label" for="privacy-policy">Eu aceito os <strong>Termos</strong> da <Link to={process.env.PUBLIC_URL + "/privacy-policy/"}>Política de Privacidade</Link></label>
+            <input type="checkbox" className={`form-check-input form-control ${errors.contactPrivacy ? 'is-invalid' : ''}`} {...register('contactPrivacy')} name="contactPrivacy" id="privacy-policy"/>
+            <label className="form-check-label" htmlFor="privacy-policy">Eu aceito os <strong>Termos</strong> da <Link to={process.env.PUBLIC_URL + "/privacy-policy/"}>Política de Privacidade</Link></label>
             <div className="invalid-feedback">{errors.contactPrivacy && errors.contactPrivacy.message}</div>
         </div>
         <div className="form-group my-5">

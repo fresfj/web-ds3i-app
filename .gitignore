@@ -7,6 +7,9 @@
 /.pnp
 .pnp.js
 
+# amplify
+/amplify
+
 # testing
 /coverage
 
