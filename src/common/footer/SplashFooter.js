@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebookF, FaDribbble } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 
 
 const SplashFooter = () => {
@@ -17,8 +17,9 @@ const SplashFooter = () => {
                         </div>
                         <div className="col-lg-2">
                         <ul className="footer-social list-unstyled">
-                            <li><a href="https://www.facebook.com/"><FaFacebookF /></a></li>
-                            <li><a href="https://dribbble.com/"><FaDribbble /></a></li>
+                            <li><a href="https://facebook.com/OficialDs3i/" target={'_blank'} title='DS3I - Facebook'><FaFacebookF /></a></li>
+                            <li><a href="https://www.linkedin.com/company/ds3i/" target={'_blank'} title='DS3I - Linkedin'><FaLinkedinIn /></a></li>
+                            <li><a href="https://www.instagram.com/ds3i_/" target={'_blank'} title='DS3I - Instagram'><FaInstagram /></a></li>
                         </ul>
                         </div>
                         <div className="col-lg-5">

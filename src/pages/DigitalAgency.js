@@ -16,8 +16,8 @@ const ProjectFour = loadable(() => import('../component/project/ProjectFour'))
 const TestimonialOne = loadable(() => import('../component/testimonial/TestimonialOne'))
 const BrandOne = loadable(() => import('../component/brand/BrandOne'))
 const CtaLayoutOne = loadable(() => import('../component/cta/CtaLayoutOne'))
-const DigitalAgency = () => {
 
+const DigitalAgency = () => {
     return (
         <>
         <SEO title="Desenvolvimento de sites e aplicativos"/>
@@ -25,6 +25,7 @@ const DigitalAgency = () => {
         <main className="main-wrapper">
             <LazyLoad height={200} offset={[-100, 0]} once ><HeaderOne /></LazyLoad>
             <LazyLoad height={200} offset={[-100, 0]} once ><BannerOne /></LazyLoad>
+            <LazyLoad height={200} offset={[-100, 0]} once >
             <div className="section section-padding-2 bg-color-dark">
                 <div className="container">
                     <motion.div
@@ -48,6 +49,7 @@ const DigitalAgency = () => {
                     <li className="shape shape-3"><LazyLoad height={200}><Image width={32} height={32} webp={process.env.PUBLIC_URL + "/images/others/bubble-43.webp"} src={process.env.PUBLIC_URL + "/images/others/bubble-43.png"} alt="Circle" /></LazyLoad></li>
                 </ul>
             </div>
+            </LazyLoad>
             <LazyLoad height={200} offset={[-100, 0]} once ><AboutOne /></LazyLoad>
             <LazyLoad height={200} offset={[-100, 0]} once ><ProjectFour /></LazyLoad>
             <LazyLoad height={200} offset={[-100, 0]} once ><TestimonialOne /></LazyLoad>

@@ -1,0 +1,71 @@
+{
+  "menu": {
+    "what_we_do": "O que fazemos?",
+    "who_we_are": "Quem somos?",
+    "projects": "Projetos",
+    "contact": "Contato",
+    "budget": "Orçamento",
+    "how_much": "Quanto custa um aplicativo?",
+    "services": {
+      "aplicativos": "Aplicativos",
+      "sites-e-sistemas": "Sites e Sistemas",
+      "design-app": "Design App",
+      "interfaces": "Interfaces",
+      "e-commerce": "E-commerce",
+      "consultoria": "Consultoria"
+    }
+  },
+  "Offmenu": {
+    "search": "Procurar...",
+    "budget": "Orçamento",
+    "how_much": "Quanto custa um aplicativo?",
+    "contact": "Contato",
+    "change_language": "Alterar Idioma",
+    "contact_information": "Informações de Contato",
+    "we_are_available": "Estamos disponíveis 24/7",
+    "find_us": "Encontre-nos nas Redes"
+  },
+  "sectionCall": {
+    "title": "Peça um orçamento agora!",
+    "subtitle": "Vamos criar algo extraordinário juntos",
+    "link": "Comece agora o seu projeto"
+  },
+  "banner": {
+    "title": "Soluções digitais:",
+    "subtitle": "Desenvolvimento de soluções digitais para o seu negócio.",
+    "tag1": "Sistema",
+    "tag2": "Web",
+    "button": "Vamos conversar"
+  },
+  "footer": {
+    "title": "Transforme seu projetos em possibilidade",
+    "subtitle": "Pronto para os resultados que tanto deseja. #vamosjuntos",
+    "services": {
+      "title": "Serviços",
+      "lt1": "Aplicativos",
+      "lt2": "Sites e sistemas",
+      "lt3": "Design app",
+      "lt4": "Interfaces",
+      "lt5": "E-commerce",
+      "lt6": "Consultoria"
+    },
+    "resources": {
+      "title": "Recursos",
+      "lt1": "Orçamento",
+      "lt2": "Simulador",
+      "lt3": "Portfolio"
+    },
+    "support": {
+      "title": "Contato",
+      "lt1": "Política de Privacidade",
+      "lt2": "Termos de Uso"
+    },
+    "copyright": {
+      "link": "DS3I - Desenvolvimento Inteligente",
+      "developed": "Desenvolvido com ",
+      "by": " pela equipe ds3i"
+    },
+    "privacy": "Política de Privacidade",
+    "terms": "Termos de Uso"
+  }
+}

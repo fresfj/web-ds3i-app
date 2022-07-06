@@ -6,10 +6,10 @@ import OffcanvasMenu from './OffcanvasMenu';
 import StickyHeader from './StickyHeader';
 import SwitcherHeader from '../../elements/switcher/SwitcherHeader';
 import MobileMenu from './MobileMenu';
-
+import { useTranslation } from 'react-i18next';
 
 const HeaderOne = () => {
-
+    const { t } = useTranslation();
     const [showOffcanvas, setShowOffcanvas] = useState(false);
 
     const OffcanvasHandleClose = () => setShowOffcanvas(false);
@@ -56,7 +56,7 @@ const HeaderOne = () => {
                                 <ul className="list-unstyled">
                                     <li className="buy-btn mainmenu-nav">
                                         <Link to={process.env.PUBLIC_URL + "/quanto-custa-um-aplicativo/"} className="axil-btn btn-fill-primary">
-                                        Quanto custa um aplicativo?
+                                        {t('menu.how_much')}
                                         </Link>
                                     </li>
                                     <li className="sidemenu-btn d-lg-block d-none">

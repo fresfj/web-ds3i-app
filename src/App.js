@@ -2,13 +2,14 @@ import React, { Suspense, useContext, createContext, useMemo, useEffect, useStat
 import {BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import TopBarProgress from "react-topbar-progress-indicator";
 import loadable from '@loadable/component'
-
+import { I18nextProvider } from "react-i18next";
 import ConfigCookie from "./data/cookie/CookieConfig.json";
 import ScrollToTop from './component/scrollToTop/ScrollToTop';
 import 'bootstrap/dist/css/bootstrap.min.css';
 // Css Import
 import './assets/scss/app.scss';
 import { configure } from 'cookie-though';
+import i18n from "./i18n";
 //Home
 const DigitalAgency = loadable(() => import('./pages/DigitalAgency'));
 // Service 
@@ -62,12 +63,13 @@ configure(ConfigCookie);
 const App = () => {
   return (
     <IndicatorProvider>
+      <I18nextProvider i18n={i18n}>
       <Indicator />
       <Router history={ history }>
         <ScrollToTop>
           <Suspense fallback={<IndicatorFallback />}>
             <Routes>
-              <Route exact path={process.env.PUBLIC_URL + "/"} element={<DigitalAgency />}/>
+              <Route exact path={process.env.PUBLIC_URL + `/`} element={<DigitalAgency />}/>
               <Route path={process.env.PUBLIC_URL + "/quanto-custa-um-aplicativo/"} element={<Calculator />}/>
               {/* Service */}
               <Route path={process.env.PUBLIC_URL + "/o-que-fazemos/"} element={<ServiceOne />}/>
@@ -88,6 +90,7 @@ const App = () => {
           </Suspense>
         </ScrollToTop>
       </Router>
+      </I18nextProvider>
     </IndicatorProvider>
   )
 }

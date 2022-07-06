@@ -1,0 +1,71 @@
+{
+  "menu": {
+    "what_we_do": "What do we do?",
+    "who_we_are": "Who are we?",
+    "projects": "Projects",
+    "contact": "Contact",
+    "budget": "Budget",
+    "how_much": "How much does an app cost?",
+    "services": {
+      "aplicativos": "Applications",
+      "sites-e-sistemas": "Sites and Systems",
+      "design-app": "Design App",
+      "interfaces": "Interfaces",
+      "e-commerce": "eCommerce",
+      "consultoria": "Consulting"
+    }
+  },
+  "Offmenu": {
+    "search": "Search...",
+    "budget": "Budget",
+    "how_much": "How much does an app cost?",
+    "contact": "Contact",
+    "change_language": "Change Language",
+    "contact_information": "Contact Information",
+    "we_are_available": "We are available 24/7",
+    "find_us": "Find us on the Networks"
+  },
+  "sectionCall": {
+    "title": "Ask for a quote now!",
+    "subtitle": "Let's create something extraordinary together",
+    "link": "Start your project now"
+  },
+  "banner": {
+    "title": "Digital solutions:",
+    "subtitle": "Development of digital solutions for your business.",
+    "tag1": "System",
+    "tag2": "Web",
+    "button": "Let's talk about it."
+  },
+  "footer": {
+    "title": "Turn your projects into a possibility",
+    "subtitle": "Ready for the results you want so badly. #letsgotogether",
+    "services": {
+      "title": "Services",
+      "lt1": "Applications",
+      "lt2": "Sites and systems",
+      "lt3": "Design app",
+      "lt4": "Interfaces",
+      "lt5": "E-commerce",
+      "lt6": "Consultancy"
+    },
+    "resources": {
+      "title": "Resources",
+      "lt1": "Budget",
+      "lt2": "Simulator",
+      "lt3": "Portfolio"
+    },
+    "support": {
+      "title": "Contact",
+      "lt1": "Privacy Policy",
+      "lt2": "Terms of Use"
+    },
+    "copyright": {
+      "link": "DS3I - Intelligent Development",
+      "developed": "Developed with ",
+      "by": " by team ds3i"
+    },
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  }
+}

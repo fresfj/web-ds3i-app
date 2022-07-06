@@ -1063,7 +1063,56 @@
     }
 }
 
+.flag {
+    width: 74px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-flex;
+    border-radius: 12%;
+    cursor: pointer;
+    transition: .5s ease;
+    margin-right: 10px;
+    opacity: 0.5;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
 
+    &.pt-BR {
+        background-image: url('/locales/svg/pt-BR.svg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &.active {
+            opacity: 0.8;
+            -webkit-filter: none;
+            filter: none;
+        }
+    }
+
+    &.en {
+        background-image: url('/locales/svg/en.svg');
+        background-size: 190% 110%;
+        background-position: 30% 50%;
+        background-repeat: no-repeat;
+
+        &.active {
+            opacity: 0.8;
+            -webkit-filter: none;
+            filter: none;
+        }
+    }
+
+    &:hover {
+        opacity: 1;
+        -webkit-filter: none;
+        filter: none;
+    }
+
+    span {
+        visibility: hidden;
+    }
+}
 
 @media only screen and (max-width: 991px) {
     .mainmenu-nav {

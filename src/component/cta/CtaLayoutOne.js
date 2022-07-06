@@ -2,19 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import LazyLoad from 'react-lazyload';
 import Image from 'react-image-webp';
-
+import { useTranslation } from 'react-i18next';
 const CtaLayoutOne = () => {
-
+    const { t } = useTranslation();
     return (
 
         <div className="section call-to-action-area">
             <div className="container">
                 <div className="call-to-action">
                     <div className="section-heading heading-light">
-                        <span className="subtitle">Vamos criar algo extraordinário juntos</span>
-                        <h2 className="title">Peça um orçamento agora!</h2>
+                        <span className="subtitle">{t('sectionCall.subtitle')}</span>
+                        <h2 className="title">{t('sectionCall.title')}</h2>
                         <Link to={process.env.PUBLIC_URL + "/orcamento/"} className="axil-btn btn-large btn-fill-white">
-                            Comece agora o seu projeto
+                        {t('sectionCall.link')}
                         </Link>
                     </div>
                     <div className="thumbnail">
