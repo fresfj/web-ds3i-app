@@ -33,11 +33,24 @@ const HeaderOne = () => {
         }
     }
 
+   
+    let prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+        const currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            if (document.getElementById('navbar'))
+                document.getElementById("navbar").style.top = "0px";
+        } else {
+            document.getElementById("navbar").style.top = "-150px";
+        }
+        prevScrollpos = currentScrollPos;
+    }
+
 
     return (
         <>
             <header className="header axil-header header-style-1">
-                <div className={`axil-mainmenu ${sticky ? "axil-sticky" : ""}`}>
+                <div id='navbar' className={`axil-mainmenu ${sticky ? "axil-sticky" : ""}`}>
                     <div className="container">
                         <div className="header-navbar">
                             <div className="header-logo">

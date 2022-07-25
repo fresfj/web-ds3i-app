@@ -6,6 +6,7 @@ import ColorSwitcher from '../elements/switcher/ColorSwitcher';
 import LazyLoad from 'react-lazyload';
 import Image from 'react-image-webp';
 import { motion } from "framer-motion/dist/framer-motion"
+import { useTranslation } from 'react-i18next';
 
 const HeaderOne = loadable(() => import('../common/header/HeaderOne'))
 const FooterOne = loadable(() => import('../common/footer/FooterOne'))
@@ -18,13 +19,14 @@ const BrandOne = loadable(() => import('../component/brand/BrandOne'))
 const CtaLayoutOne = loadable(() => import('../component/cta/CtaLayoutOne'))
 
 const DigitalAgency = () => {
+    const { t } = useTranslation();
     return (
         <>
         <SEO title="Desenvolvimento de sites e aplicativos"/>
         <ColorSwitcher />
         <main className="main-wrapper">
-            <LazyLoad height={200} offset={[-100, 0]} once ><HeaderOne /></LazyLoad>
-            <LazyLoad height={200} offset={[-100, 0]} once ><BannerOne /></LazyLoad>
+            <HeaderOne />
+            <BannerOne />
             <LazyLoad height={200} offset={[-100, 0]} once >
             <div className="section section-padding-2 bg-color-dark">
                 <div className="container">
@@ -34,9 +36,9 @@ const DigitalAgency = () => {
                         transition={{ duration: 0.5 }}
                     >
                     <SectionTitle 
-                        subtitle="O que nós podemos fazer"
-                        title="Serviços em que somos especializados"
-                        description="Conheça o trabalho que fazemos e as soluções que podemos oferecer para sua empresa."
+                        subtitle={t('sectionServices.subtitle')}
+                        title={t('sectionServices.title')}
+                        description={t('sectionServices.description')}
                         textAlignment="heading-light-left"
                         textColor=""
                     />

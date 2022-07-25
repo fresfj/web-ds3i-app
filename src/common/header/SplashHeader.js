@@ -9,7 +9,7 @@ const SplashHeader = () => {
 
     return (
         <header className="header axil-header header-style-1 splash-header-style">
-            <div className={`axil-mainmenu ${sticky ? "axil-sticky" : ""}`}>
+            <div id='navbar' className={`axil-mainmenu ${sticky ? "axil-sticky" : ""}`}>
                 <div className="container">
                 <div className="header-navbar">
                     <div className="header-logo">

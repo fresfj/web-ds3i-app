@@ -1,71 +1,107 @@
 {
-  "menu": {
-    "what_we_do": "What do we do?",
-    "who_we_are": "Who are we?",
-    "projects": "Projects",
-    "contact": "Contact",
-    "budget": "Budget",
-    "how_much": "How much does an app cost?",
-    "services": {
-      "aplicativos": "Applications",
-      "sites-e-sistemas": "Sites and Systems",
-      "design-app": "Design App",
-      "interfaces": "Interfaces",
-      "e-commerce": "eCommerce",
-      "consultoria": "Consulting"
-    }
-  },
-  "Offmenu": {
-    "search": "Search...",
-    "budget": "Budget",
-    "how_much": "How much does an app cost?",
-    "contact": "Contact",
-    "change_language": "Change Language",
-    "contact_information": "Contact Information",
-    "we_are_available": "We are available 24/7",
-    "find_us": "Find us on the Networks"
-  },
-  "sectionCall": {
-    "title": "Ask for a quote now!",
-    "subtitle": "Let's create something extraordinary together",
-    "link": "Start your project now"
-  },
-  "banner": {
-    "title": "Digital solutions:",
-    "subtitle": "Development of digital solutions for your business.",
-    "tag1": "System",
-    "tag2": "Web",
-    "button": "Let's talk about it."
-  },
-  "footer": {
-    "title": "Turn your projects into a possibility",
-    "subtitle": "Ready for the results you want so badly. #letsgotogether",
-    "services": {
-      "title": "Services",
-      "lt1": "Applications",
-      "lt2": "Sites and systems",
-      "lt3": "Design app",
-      "lt4": "Interfaces",
-      "lt5": "E-commerce",
-      "lt6": "Consultancy"
-    },
-    "resources": {
-      "title": "Resources",
-      "lt1": "Budget",
-      "lt2": "Simulator",
-      "lt3": "Portfolio"
-    },
-    "support": {
-      "title": "Contact",
-      "lt1": "Privacy Policy",
-      "lt2": "Terms of Use"
-    },
-    "copyright": {
-      "link": "DS3I - Intelligent Development",
-      "developed": "Developed with ",
-      "by": " by team ds3i"
-    },
-    "privacy": "Privacy Policy",
-    "terms": "Terms of Use"
-  }
+	"FormWho": {
+		"title": "Let's chat and turn your idea into something memorable."
+	},
+	"Offmenu": {
+		"budget": "Budget",
+		"change_language": "Change Language",
+		"contact": "Contact",
+		"contact_information": "Contact Information",
+		"find_us": "Find us on the Networks",
+		"how_much": "How much does an app cost?",
+		"search": "Search...",
+		"we_are_available": "We are available 24/7"
+	},
+	"banner": {
+		"button": "Let's talk about it",
+		"subtitle": "Development of digital solutions for your business.",
+		"title": "Digital solutions:",
+		"titleLoop1": "Applications",
+		"titleLoop2": "Websites",
+		"titleLoop3": "eCommerce",
+		"titleLoop4": "Systems",
+		"titleLoop5": "Integration",
+		"titleLoop6": "Artificial Intelligence",
+		"titleLoop7": "Interfaces",
+		"titleLoop8": "Designer",
+		"titleLoop9": "Infoproducts"
+	},
+	"footer": {
+		"copyright": {
+			"by": " by team ds3i",
+			"developed": "Developed with ",
+			"link": "DS3I - Intelligent Development"
+		},
+		"privacy": "Privacy Policy",
+		"resources": {
+			"lt1": "Budget",
+			"lt2": "Simulator",
+			"lt3": "Portfolio",
+			"title": "Resources"
+		},
+		"services": {
+			"lt1": "Applications",
+			"lt2": "Sites and systems",
+			"lt3": "Design app",
+			"lt4": "Interfaces",
+			"lt5": "E-commerce",
+			"lt6": "Consultancy",
+			"title": "Services"
+		},
+		"subtitle": "Ready for the results you want so badly. #letsgotogether",
+		"support": {
+			"lt1": "Privacy Policy",
+			"lt2": "Terms of Use",
+			"title": "Contact"
+		},
+		"terms": "Terms of Use",
+		"title": "Turn your projects into a possibility"
+	},
+	"menu": {
+		"budget": "Budget",
+		"contact": "Contact",
+		"how_much": "How much does an app cost?",
+		"projects": "Projects",
+		"services": {
+			"aplicativos": "Applications",
+			"consultoria": "Consulting",
+			"design-app": "Design App",
+			"e-commerce": "eCommerce",
+			"interfaces": "Interfaces",
+			"sites-e-sistemas": "Sites and Systems"
+		},
+		"what_we_do": "What do we do?",
+		"who_we_are": "Who are we?"
+	},
+	"sectionBrand": {
+		"description": "Native or automated system integration, native application development, and continuous system improvement",
+		"subtitle": "Companies that trust our work",
+		"title": "We develop solutions"
+	},
+	"sectionCall": {
+		"link": "Start your project now",
+		"subtitle": "Let's create something extraordinary together",
+		"title": "Ask for a quote now!"
+	},
+	"sectionDepositions": {
+		"description": "We value and are proud of the trusting relationship we have developed over the years with our customers. Come you too to be part of this winning portfolio.",
+		"subtitle": "Depositions",
+		"title": "What our customers say"
+	},
+	"sectionProject": {
+		"description": "Discover some projects developed by our team.",
+		"subtitle": "Projects",
+		"title": "projects delivered"
+	},
+	"sectionServices": {
+		"description": "Discover the work we do and the solutions we can offer for your company.",
+		"subtitle": "What we can do",
+		"title": "Services we specialize in"
+	},
+	"sectionWho": {
+		"description": "We transform ideas into great products, combining minimalist design with maximum usability. We are as direct as we are open and collaborative.",
+		"paragraph": "Our team is the best because we love what we do and deliver memorable products.",
+		"subtitle": "Who we are?",
+		"title": "Intelligent systems developers"
+	}
 }

@@ -3,9 +3,11 @@ import loadable from '@loadable/component'
 import Image from 'react-image-webp';
 import LazyLoad from 'react-lazyload';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import { useTranslation } from 'react-i18next';
 const FormOne = loadable(() => import('../contact/FormOne'))
 
 const AboutOne = () => {
+    const { t } = useTranslation();
     return (
         <section className="section section-padding-equal bg-color-light">
             <div className="container">
@@ -14,10 +16,10 @@ const AboutOne = () => {
                     <AnimationOnScroll animateIn="slideInLeft" duration={1} delay={300} animateOnce={true}>
                         <div className="about-us">
                             <div className="section-heading heading-left mb-0">
-                                <span className="subtitle">Quem somos?</span>
-                                <h2 className="title mb--40">Desenvolvedores de sistemas inteligentes</h2>
-                                <p>Transformamos ideias em grandes produtos, combinando design minimalista com máxima usabilidade. Somos tão diretos quanto abertos e colaborativos.</p>
-                                <p>Nossa equipe é a melhor porque nós amamos o que fazemos e entregamos produtos memorável.</p>
+                                <span className="subtitle">{t('sectionWho.subtitle')}</span>
+                                <h2 className="title mb--40">{t('sectionWho.title')}</h2>
+                                <p>{t('sectionWho.description')}</p>
+                                <p>{t('sectionWho.paragraph')}</p>
                             </div>
                         </div>
                     </AnimationOnScroll>
@@ -26,7 +28,7 @@ const AboutOne = () => {
                     <div className="col-xl-5 col-lg-6 offset-xl-1">
                         <AnimationOnScroll animateIn="zoomIn" duration={1} delay={300} animateOnce={true}>
                             <div className="contact-form-box">
-                                <h3 className="title">Vamos conversar e transformar sua ideia em algo memorável.</h3>
+                                <h3 className="title">{t('FormWho.title')}</h3>
                                 <LazyLoad height={200} offset={[-100, 0]} once ><FormOne /></LazyLoad>
                             </div>
                         </AnimationOnScroll>

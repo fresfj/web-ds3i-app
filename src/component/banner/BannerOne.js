@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import Image from 'react-image-webp';
 import TextLoop from "react-text-loop";
 import LazyLoad from 'react-lazyload';
+import { useTranslation } from 'react-i18next';
 
 const BannerOne = () => {
+    const { t } = useTranslation();
     return (
         <div className="banner banner-style-1">
             <div className="container">
@@ -15,22 +17,22 @@ const BannerOne = () => {
                             <AnimationOnScroll animateIn="fadeInUp" animateOnce={true} delay={100}>
                                 <div className={`inner`}>
                                     <h1 className="title">
-                                        Soluções digitais:<br />
+                                        {t('banner.title')}<br />
                                         <TextLoop springConfig={{ interval: 2000, stiffness: 180, damping: 8 }} className={'titleLoop'}>
-                                            <span>Aplicativos.</span>
-                                            <span>Sites.</span>
-                                            <span>Loja Virtual.</span>
-                                            <span>Sistemas.</span>
-                                            <span>Integração.</span>
-                                            <span>Inteligência Artificial.</span>
-                                            <span>Interfaces.</span>
-                                            <span>Designer.</span>
-                                            <span>Infoprodutos.</span>
+                                            <span>{t('banner.titleLoop1')}.</span>
+                                            <span>{t('banner.titleLoop2')}.</span>
+                                            <span>{t('banner.titleLoop3')}.</span>
+                                            <span>{t('banner.titleLoop4')}.</span>
+                                            <span>{t('banner.titleLoop5')}.</span>
+                                            <span>{t('banner.titleLoop6')}.</span>
+                                            <span>{t('banner.titleLoop7')}.</span>
+                                            <span>{t('banner.titleLoop8')}.</span>
+                                            <span>{t('banner.titleLoop9')}.</span>
                                         </TextLoop>{" "}
                                     </h1>
                                 </div>
-                                <h2 className="subtitle">Desenvolvimento de soluções digitais para o seu negócio.</h2>
-                                <Link to={process.env.PUBLIC_URL + "/contato/"} className="axil-btn btn-fill-primary btn-large">Vamos conversar</Link>
+                                <h2 className="subtitle">{t('banner.subtitle')}</h2>
+                                <Link to={process.env.PUBLIC_URL + "/contato/"} className="axil-btn btn-fill-primary btn-large">{t('banner.button')}</Link>
                             </AnimationOnScroll>
                         </div>
                     </div>

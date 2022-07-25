@@ -5,11 +5,26 @@
     width: 4em !important;
 }
 
+@media #{$sm-layout} {
+    .form-group .form-switch label.form-check-label {
+        line-height: 1.8677rem;
+        display: inline-grid !important;
+    }
+
+    .form-group.float-start {
+        display: inline-flex !important;
+
+        .form-check-label {
+            line-height: normal !important;
+        }
+    }
+}
+
 .form-group label.form-check-label {
     margin-bottom: 0px !important;
-    line-height: 38px;
+    line-height: 2.3677rem;
     padding-left: 14px;
-    display: initial !important;
+    display: inline !important;
 
     a {
         display: initial !important;
@@ -17,8 +32,8 @@
 }
 
 .form-group label.form-check-label span {
-    line-height: 1.1875rem;
-    font-size: 0.75rem;
+    line-height: 0.1875rem;
+    font-size: 0.65rem;
 }
 
 select {

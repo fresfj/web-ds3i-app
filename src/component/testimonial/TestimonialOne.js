@@ -2,15 +2,17 @@ import React from 'react';
 import SectionTitle from '../../elements/section-title/SectionTitle';
 import TestimonialPropOne from './TestimonialPropOne';
 import LazyLoad from 'react-lazyload';
+import { useTranslation } from 'react-i18next';
 import Image from 'react-image-webp';
 const TestimonialOne = () => {
+    const { t } = useTranslation();
     return (
         <div className="section section-padding">
             <div className="container">
                 <SectionTitle 
-                    subtitle="Depoimentos"
-                    title="O que dizem nossos clientes"
-                    description="Valorizamos e temos orgulho do relacionamento de confiança que desenvolvemos ao longo dos anos com nossos clientes. Venha você também para fazer parte desse portfólio vencedor."
+                    subtitle={t('sectionDepositions.subtitle')}
+                    title={t('sectionDepositions.title')}
+                    description={t('sectionDepositions.description')}
                     textAlignment="heading-left"
                     textColor=""
                 />

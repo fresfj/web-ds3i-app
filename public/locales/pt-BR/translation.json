@@ -1,71 +1,107 @@
 {
-  "menu": {
-    "what_we_do": "O que fazemos?",
-    "who_we_are": "Quem somos?",
-    "projects": "Projetos",
-    "contact": "Contato",
-    "budget": "Orçamento",
-    "how_much": "Quanto custa um aplicativo?",
-    "services": {
-      "aplicativos": "Aplicativos",
-      "sites-e-sistemas": "Sites e Sistemas",
-      "design-app": "Design App",
-      "interfaces": "Interfaces",
-      "e-commerce": "E-commerce",
-      "consultoria": "Consultoria"
-    }
-  },
-  "Offmenu": {
-    "search": "Procurar...",
-    "budget": "Orçamento",
-    "how_much": "Quanto custa um aplicativo?",
-    "contact": "Contato",
-    "change_language": "Alterar Idioma",
-    "contact_information": "Informações de Contato",
-    "we_are_available": "Estamos disponíveis 24/7",
-    "find_us": "Encontre-nos nas Redes"
-  },
-  "sectionCall": {
-    "title": "Peça um orçamento agora!",
-    "subtitle": "Vamos criar algo extraordinário juntos",
-    "link": "Comece agora o seu projeto"
-  },
-  "banner": {
-    "title": "Soluções digitais:",
-    "subtitle": "Desenvolvimento de soluções digitais para o seu negócio.",
-    "tag1": "Sistema",
-    "tag2": "Web",
-    "button": "Vamos conversar"
-  },
-  "footer": {
-    "title": "Transforme seu projetos em possibilidade",
-    "subtitle": "Pronto para os resultados que tanto deseja. #vamosjuntos",
-    "services": {
-      "title": "Serviços",
-      "lt1": "Aplicativos",
-      "lt2": "Sites e sistemas",
-      "lt3": "Design app",
-      "lt4": "Interfaces",
-      "lt5": "E-commerce",
-      "lt6": "Consultoria"
-    },
-    "resources": {
-      "title": "Recursos",
-      "lt1": "Orçamento",
-      "lt2": "Simulador",
-      "lt3": "Portfolio"
-    },
-    "support": {
-      "title": "Contato",
-      "lt1": "Política de Privacidade",
-      "lt2": "Termos de Uso"
-    },
-    "copyright": {
-      "link": "DS3I - Desenvolvimento Inteligente",
-      "developed": "Desenvolvido com ",
-      "by": " pela equipe ds3i"
-    },
-    "privacy": "Política de Privacidade",
-    "terms": "Termos de Uso"
-  }
+	"FormWho": {
+		"title": "Vamos conversar e transformar sua ideia em algo memorável."
+	},
+	"Offmenu": {
+		"budget": "Orçamento",
+		"change_language": "Alterar Idioma",
+		"contact": "Contato",
+		"contact_information": "Informações de Contato",
+		"find_us": "Encontre-nos nas Redes",
+		"how_much": "Quanto custa um aplicativo?",
+		"search": "Procurar...",
+		"we_are_available": "Estamos disponíveis 24/7"
+	},
+	"banner": {
+		"button": "vamos conversar",
+		"subtitle": "Desenvolvimento de soluções digitais para o seu negócio.",
+		"title": "Soluções digitais:",
+		"titleLoop1": "Aplicativos",
+		"titleLoop2": "Sites",
+		"titleLoop3": "Loja Virtual",
+		"titleLoop4": "Sistemas",
+		"titleLoop5": "Integração",
+		"titleLoop6": "Inteligência Artificial",
+		"titleLoop7": "Interfaces",
+		"titleLoop8": "Designer",
+		"titleLoop9": "Infoprodutos"
+	},
+	"footer": {
+		"copyright": {
+			"by": " pela equipe ds3i",
+			"developed": "Desenvolvido com ",
+			"link": "DS3I - Desenvolvimento Inteligente"
+		},
+		"privacy": "Política de Privacidade",
+		"resources": {
+			"lt1": "Orçamento",
+			"lt2": "Simulador",
+			"lt3": "Portfolio",
+			"title": "Recursos"
+		},
+		"services": {
+			"lt1": "Aplicativos",
+			"lt2": "Sites e sistemas",
+			"lt3": "Design app",
+			"lt4": "Interfaces",
+			"lt5": "E-commerce",
+			"lt6": "Consultoria",
+			"title": "Serviços"
+		},
+		"subtitle": "Pronto para os resultados que tanto deseja. #vamosjuntos",
+		"support": {
+			"lt1": "Política de Privacidade",
+			"lt2": "Termos de Uso",
+			"title": "Contato"
+		},
+		"terms": "Termos de Uso",
+		"title": "Transforme seu projetos em possibilidade"
+	},
+	"menu": {
+		"budget": "Orçamento",
+		"contact": "Contato",
+		"how_much": "Quanto custa um aplicativo?",
+		"projects": "Projetos",
+		"services": {
+			"aplicativos": "Aplicativos",
+			"consultoria": "Consultoria",
+			"design-app": "Design App",
+			"e-commerce": "E-commerce",
+			"interfaces": "Interfaces",
+			"sites-e-sistemas": "Sites e Sistemas"
+		},
+		"what_we_do": "O que fazemos?",
+		"who_we_are": "Quem somos?"
+	},
+	"sectionBrand": {
+		"description": "Integração de sistemas de maneira nativa ou automatizada, desenvolvimento nativo para aplicativos e melhorias contínua de sistemas",
+		"subtitle": "Empresas que confiam em nosso trabalho",
+		"title": "Desenvolvemos soluções"
+	},
+	"sectionCall": {
+		"link": "Comece agora o seu projeto",
+		"subtitle": "Vamos criar algo extraordinário juntos",
+		"title": "Peça um orçamento agora!"
+	},
+	"sectionDepositions": {
+		"description": "Valorizamos e temos orgulho do relacionamento de confiança que desenvolvemos ao longo dos anos com nossos clientes. Venha você também para fazer parte desse portfólio vencedor.",
+		"subtitle": "Depoimentos",
+		"title": "O que dizem nossos clientes"
+	},
+	"sectionProject": {
+		"description": "Conheça alguns projetos desenvolvidos pela nossa equipe.",
+		"subtitle": "Projetos",
+		"title": "Projetos entregues"
+	},
+	"sectionServices": {
+		"description": "Conheça o trabalho que fazemos e as soluções que podemos oferecer para sua empresa.",
+		"subtitle": "O que nós podemos fazer",
+		"title": "Serviços em que somos especializados"
+	},
+	"sectionWho": {
+		"description": "Transformamos ideias em grandes produtos, combinando design minimalista com máxima usabilidade. Somos tão diretos quanto abertos e colaborativos.",
+		"paragraph": "Nossa equipe é a melhor porque nós amamos o que fazemos e entregamos produtos memorável.",
+		"subtitle": "Quem somos?",
+		"title": "Desenvolvedores de sistemas inteligentes"
+	}
 }

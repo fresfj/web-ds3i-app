@@ -8,10 +8,12 @@ import { Link } from 'react-router-dom';
 import Image from 'react-image-webp';
 import LazyLoad from 'react-lazyload';
 import Tilty from 'react-tilty';
+import { useTranslation } from 'react-i18next';
 const portfolioData = ProjectData;
 
 
 const ProjectFour = () => {
+    const { t } = useTranslation();
     const cardVariants = {
         offscreen: {
           y: 300
@@ -30,9 +32,9 @@ const ProjectFour = () => {
         <div className="section section-padding-equal bg-color-dark">
             <div className="container">
             <SectionTitle 
-                subtitle="Projetos"
-                title="Projetos entregues"
-                description="Conheça alguns projetos desenvolvidos pela nossa equipe."
+                subtitle={t('sectionProject.subtitle')}
+                title={t('sectionProject.title')}
+                description={t('sectionProject.description')}
                 textAlignment="heading-light-left mb--90"
                 textColor=""
             />

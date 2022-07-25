@@ -20,7 +20,7 @@ const FormBudget = ( { data } ) => {
        {title: "Aplicativo Android", sub: "Smartphones ou Tablets"},
        {title: "Aplicativo Web", sub: "Webapp, Painel Admin"},
        {title: "Loja Virtual", sub: "E-commerce"},
-       {title: "Design", sub: "Interface ou estudo de usabilidade"},
+       {title: "Design", sub: "Interface ou usabilidade"},
        {title: "Integrações", sub: "Backend, API, frontend, etc"},
        {title: "WebSite", sub: "Landing page, blog, etc"},
        {title: "Não sei", sub: "Gostaria de uma consultoria"}
