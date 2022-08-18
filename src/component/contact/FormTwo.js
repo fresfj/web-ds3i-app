@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import Alert from 'react-bootstrap/Alert';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
+import InputMask from 'react-input-mask';
 import * as Yup from "yup";
 
 const FormTwo = () => {
@@ -11,6 +12,7 @@ const FormTwo = () => {
     const form = useRef();
     const [ result, showresult ] = useState(false);
     const [ name, setName ] = useState('');
+    const [ phone, setPhone ] = useState('');
 
     const validationSchema = Yup.object().shape({
         contactName: Yup.string().required('O seu Nome é importante, por gentile, identifique-se.'),
@@ -38,17 +40,14 @@ const FormTwo = () => {
     }
 
     const onSubmit = data => {
-        console.log(JSON.stringify(data, null, 2));
         setName(data.contactName)
+        setPhone('')
         sendEmail()
     };
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-    
+    const sendEmail = () => {
         emailjs.sendForm('service_rcb2ohn', 'template_gb8h3i7', form.current, '0EOM79Rpgb022xPgL')
           .then((result) => {
-              console.log(result.text);
               reset()
           }, (error) => {
               console.log(error.text);
@@ -76,7 +75,7 @@ const FormTwo = () => {
         </div>
         <div className="form-group">
             <label>Telefone</label>
-            <input type="tel" className={`form-control ${errors.contactPhone ? 'is-invalid' : ''}`} {...register('contactPhone')} name="contactPhone" />
+            <InputMask type="tel" mask="(99) 9 9999-9999" className={`form-control ${errors.contactPhone ? 'is-invalid' : ''}`} {...register('contactPhone')} name="contactPhone" placeholder="(11) 9 8888-2323" onChange={(e) => setPhone(e.target.value)} value={phone}/>
             <div className="invalid-feedback">{errors.contactPhone && errors.contactPhone.message}</div>
         </div>
         <div className="form-group mb--40">

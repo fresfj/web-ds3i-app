@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import ProgressBar from 'react-bootstrap/ProgressBar';
 import loadable from '@loadable/component'
 import SplashFooter from '../common/footer/SplashFooter';
 import SplashHeader from '../common/header/SplashHeader';
@@ -20,6 +21,7 @@ const Calculator = () => {
     const [summedValues] = useState([]);
     const [values, setValues] = useState(0);
     const [currentQuestion, setCurrentQuestion] = useState(0);
+    const [progeny, setProgeny] = useState(0);
 
     const startQuiz = () => setStart(!start)
 
@@ -27,17 +29,23 @@ const Calculator = () => {
         window.location.reload()
     }
 
-    const handleAnswerButtonClick = ( data ) => {
+    const Progress = () => { 
+        return <ProgressBar now={progeny} className="mb--40 h-8" />
+    }
+
+    const handleAnswerButtonClick = ( data, text ) => {
         if(data.value > 0){
-            summedValues.push(data)
             setValues(values + data.value)
         }
         const nextQuestion = currentQuestion + 1;
         if (nextQuestion < allData.length) {
-			setCurrentQuestion(nextQuestion);
+			setCurrentQuestion(nextQuestion)
 		} else {
 			setShowScore(true);
 		}
+        summedValues.push({title: text, ...data})
+        setProgeny(parseInt(((nextQuestion)/allData.length*100)))
+        console.log(summedValues)
     }
 
     const getFormattedPrice = (value, cifrao = true) => {
@@ -90,8 +98,10 @@ const Calculator = () => {
                                 </AnimationOnScroll>
                             </div>
                         </div>
-                        : 
+                        :
                         showScore ? 
+                        <div className="container">
+                            <Progress />
                             <div className="row justify-content-center">
                                 <div className="col-lg-6  mb--40">
                                 <AnimationOnScroll  animateIn="slideInUp" duration={1} delay={300} animateOnce={true}>
@@ -115,38 +125,40 @@ const Calculator = () => {
                                     </AnimationOnScroll>
                                 </div>
                             </div>
-                        : 
-                        <div className="container">
-                            <motion.div key={active ? active : "empty"}>
-                                <SectionTitle 
-                                    subtitle="Orçamento"
-                                    title={allData[currentQuestion].q}
-                                    textAlignment="heading-left mb--40"
-                                    textColor=""
-                                />
-                            </motion.div>
-                            <div className="row justify-content-center">
-                            {allData[currentQuestion].a.map((answerOption, index) => (
-                                <motion.div className="col-xl-4 col-lg-4" key={index} variants={cardQuestion} animate={active ? "active":"disabled"} onClick={() => setActive(!active)}>
-                                    <div className="support-box support-ticket splash-hover-control">
-                                    <span className='hover-shadow' onClick={() =>handleAnswerButtonClick(answerOption)}>
-                                        <div className='inner'>
-                                        <div className="content">
-                                            <div className="heading">
-                                                <h5 className="subtitle" dangerouslySetInnerHTML={{__html: answerOption.text}}></h5>
-                                            </div>
-                                            <p>{answerOption.price}</p>
-                                        </div>
-                                        </div>
-                                    </span>
-                                    </div>
-                                </motion.div>
-                            ))}
-                            <div className="col-lg-10">
-                                <p className='d-inline-flex px-2 py-1 fw-semibold text-warning bg-warning bg-opacity-10 border border-warning border-opacity-10 rounded-2'><FaInfoCircle className='mt-1 me-2' /> Selecione uma das opções acima para prosseguir.</p>
-                            </div>
-                            </div>
                         </div>
+                        : 
+                            <div className="container">
+                                <Progress />
+                                <motion.div key={active ? active : "empty"}>
+                                    <SectionTitle 
+                                        subtitle="Orçamento"
+                                        title={allData[currentQuestion].q}
+                                        textAlignment="heading-left mb--40"
+                                        textColor=""
+                                    />
+                                </motion.div>
+                                <div className="row justify-content-center">
+                                {allData[currentQuestion].a.map((answerOption, index) => (
+                                    <motion.div className="col-xl-4 col-lg-4" key={index} variants={cardQuestion} animate={active ? "active":"disabled"} onClick={() => setActive(!active)}>
+                                        <div className="support-box support-ticket splash-hover-control">
+                                        <span className='hover-shadow' onClick={() => handleAnswerButtonClick(answerOption, allData[currentQuestion].q)}>
+                                            <div className='inner'>
+                                            <div className="content">
+                                                <div className="heading">
+                                                    <h5 className="subtitle" dangerouslySetInnerHTML={{__html: answerOption.text}}></h5>
+                                                </div>
+                                                <p>{answerOption.price}</p>
+                                            </div>
+                                            </div>
+                                        </span>
+                                        </div>
+                                    </motion.div>
+                                ))}
+                                <div className="col-lg-10">
+                                    <p className='d-inline-flex px-2 py-1 fw-semibold text-warning bg-warning bg-opacity-10 border border-warning border-opacity-10 rounded-2'><FaInfoCircle className='mt-1 me-2' /> Selecione uma das opções acima para prosseguir.</p>
+                                </div>
+                                </div>
+                            </div>
                         } 
                     </div>
                     <ul className="shape-group list-unstyled">

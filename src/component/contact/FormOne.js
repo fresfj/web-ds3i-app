@@ -2,6 +2,7 @@ import React, {useRef, useState} from 'react';
 import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import Alert from 'react-bootstrap/Alert';
+import InputMask from 'react-input-mask';
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -11,6 +12,7 @@ const FormOne = ( { data = null } ) => {
     const form = useRef();
     const [ result, showresult ] = useState(false);
     const [ name, setName ] = useState('');
+    const [ phone, setPhone ] = useState('');
     const [ budgetData ] = useState(data)
     const validationSchema = Yup.object().shape({
         contactName: Yup.string().required('O seu Nome é importante, por gentile, identifique-se.'),
@@ -38,7 +40,7 @@ const FormOne = ( { data = null } ) => {
     }
 
     const onSubmit = data => {
-        console.log(JSON.stringify(data, null, 2));
+        setPhone('')
         setName(data.contactName)
         sendEmail()
     };
@@ -63,7 +65,7 @@ const FormOne = ( { data = null } ) => {
         <form ref={form} onSubmit={handleSubmit(onSubmit)} className="axil-contact-form">
             { budgetData && budgetData.summed !== undefined ? 
                 budgetData.summed.map((item, key) => 
-                    <input key={key} type="hidden" name='budget[]' value={`Text: ${item.text} value: ${item.value}`} />
+                    <input key={key} type="hidden" name='budget[]' value={`P: ${item.title} R: ${item.text} V: ${item.value}`} />
                 )
                 : '' }
         <div className="form-group">
@@ -78,7 +80,7 @@ const FormOne = ( { data = null } ) => {
         </div>
         <div className="form-group mb--40">
             <label>Telefone</label>
-            <input type="tel" className={`form-control ${errors.contactPhone ? 'is-invalid' : ''}`} {...register('contactPhone')} name="contactPhone" placeholder="(11) 98888-2323" />
+            <InputMask type="tel" mask="(99) 9 9999-9999" className={`form-control ${errors.contactPhone ? 'is-invalid' : ''}`} {...register('contactPhone')} name="contactPhone" placeholder="(11) 9 8888-2323" onChange={(e) => setPhone(e.target.value)} value={phone} />
             <div className="invalid-feedback">{errors.contactPhone && errors.contactPhone.message}</div>
         </div>
         <div className="form-group mb-3 float-start">
