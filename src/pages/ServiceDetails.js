@@ -25,7 +25,6 @@ const ServiceDetails = () => {
     const getServiceData = allServiceData.filter(data => slugify(data.title) === serviceSlug);
     const detailsService = getServiceData[0];
 
-
     return (
         <>
         <SEO title="Service Details" />
@@ -38,7 +37,7 @@ const ServiceDetails = () => {
             styleClass=""
             mainThumb="/images/banner/banner-thumb-4.png"
             />
-            <AboutTwo />
+            <AboutTwo detail={detailsService} />
            
             <ProcessOne />
             <div className="section section-padding">

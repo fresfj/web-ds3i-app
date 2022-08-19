@@ -4,6 +4,7 @@ import ProcesstData from "../../data/process/ProcessData.json";
 import Tilty from 'react-tilty';
 import Image from 'react-image-webp';
 import LazyLoad from 'react-lazyload';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 const getProcesstData = ProcesstData;
 
 const ProcessOne = () => {
@@ -21,9 +22,11 @@ const ProcessOne = () => {
                 {getProcesstData.map((data) => (
                     <div key={data.id} className={`process-work ${(data.id % 2  === 0) ? "content-reverse" : ""}`}>
                         <Tilty perspective={2000}>
-                            <div className="thumbnail">
-                                <LazyLoad height={200}><Image width={410} height={410} webp={process.env.PUBLIC_URL + data.webp} src={process.env.PUBLIC_URL + data.thumb} alt="Thumbnail" /></LazyLoad>
-                            </div>
+                            <AnimationOnScroll animateIn="zoomIn" animateOut='fadeOutDown' duration={1} delay={300} animateOnce={true}>
+                                <div className="thumbnail">
+                                    <LazyLoad height={200}><Image width={310} height={310} webp={process.env.PUBLIC_URL + data.webp} src={process.env.PUBLIC_URL + data.thumb} alt="Thumbnail" /></LazyLoad>
+                                </div>
+                            </AnimationOnScroll>
                         </Tilty>
                     <div className="content">
                         <span className="subtitle">{data.subtitle}</span>

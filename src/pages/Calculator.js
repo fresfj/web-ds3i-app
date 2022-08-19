@@ -12,6 +12,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 import { motion } from "framer-motion/dist/framer-motion"
 import LazyLoad from 'react-lazyload';
 import Image from 'react-image-webp';
+import { FaPlay, FaRedo } from "react-icons/fa";
 const FormOne = loadable(() => import('../component/contact/FormOne'));
 const allData = CalculatorData;
 
@@ -45,7 +46,6 @@ const Calculator = () => {
 		}
         summedValues.push({title: text, ...data})
         setProgeny(parseInt(((nextQuestion)/allData.length*100)))
-        console.log(summedValues)
     }
 
     const getFormattedPrice = (value, cifrao = true) => {
@@ -86,7 +86,7 @@ const Calculator = () => {
                                     <h1 className="title">Quanto custa um aplicativo?</h1>
                                     <p>Calcule rapidamente o custo para poder criar seu aplicativo respondendo algumas perguntas.</p>
                                 </div>
-                                <button onClick={startQuiz} className="axil-btn btn-fill-primary">Iniciar</button>
+                                <button onClick={startQuiz} className="axil-btn btn-fill-primary"><FaPlay size={30} className="me-2" /> Iniciar</button>
                                 </AnimationOnScroll>
                             </div>
                             <div className="col-xl-5 col-lg-6 offset-xl-1">
@@ -113,7 +113,7 @@ const Calculator = () => {
                                         <h4 className="title fw-bold">a partir de <span className='text-success'>{getFormattedPrice(values)}</span></h4>
                                         <span className="subtitle">Baseado nas suas respostas conseguimos levantar o custo estimado para iniciar o desenvolvimento do seu aplicativo, para saber mais informações e tirar dúvidas, entre em contato com a gente através do formulário ou chama no whats.</span>
                                     </div>
-                                    <button onClick={restQuiz} className="axil-btn btn-fill-primary">Recomeçar o calculo</button>
+                                    <button onClick={restQuiz} className="axil-btn btn-fill-primary"><FaRedo size={30} className="me-2" />  Recomeçar o calculo</button>
                                 </AnimationOnScroll>
                                 </div>
                                 <div className="col-xl-5 col-lg-6 offset-xl-1">

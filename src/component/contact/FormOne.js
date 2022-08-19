@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import Alert from 'react-bootstrap/Alert';
 import InputMask from 'react-input-mask';
+import { BiMailSend } from "react-icons/bi";
 
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -89,7 +90,7 @@ const FormOne = ( { data = null } ) => {
             <div className="invalid-feedback">{errors.contactPrivacy && errors.contactPrivacy.message}</div>
         </div>
         <div className="form-group">
-            <button type="submit" className="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn">Solicitar um orçamento</button>
+            <button type="submit" className="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn"><BiMailSend size={30} className="me-2"/> Solicitar um orçamento</button>
         </div>
         <div className="form-group">
             {result ? <Result /> : null}

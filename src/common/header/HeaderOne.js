@@ -5,6 +5,7 @@ import Nav from '../../common/header/Nav';
 import OffcanvasMenu from './OffcanvasMenu';
 import StickyHeader from './StickyHeader';
 import SwitcherHeader from '../../elements/switcher/SwitcherHeader';
+import { IoCalculator } from "react-icons/io5";
 import MobileMenu from './MobileMenu';
 import { useTranslation } from 'react-i18next';
 
@@ -69,7 +70,7 @@ const HeaderOne = () => {
                                 <ul className="list-unstyled">
                                     <li className="buy-btn mainmenu-nav">
                                         <Link to={process.env.PUBLIC_URL + "/quanto-custa-um-aplicativo/"} className="axil-btn btn-fill-primary">
-                                        {t('menu.how_much')}
+                                            <IoCalculator size={30} className="me-2" /> {t('menu.how_much')}
                                         </Link>
                                     </li>
                                     <li className="sidemenu-btn d-lg-block d-none">

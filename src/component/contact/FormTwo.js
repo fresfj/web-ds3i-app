@@ -5,6 +5,7 @@ import Alert from 'react-bootstrap/Alert';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
 import InputMask from 'react-input-mask';
+import { BiMailSend } from "react-icons/bi";
 import * as Yup from "yup";
 
 const FormTwo = () => {
@@ -88,7 +89,7 @@ const FormTwo = () => {
             <div className="invalid-feedback">{errors.contactPrivacy && errors.contactPrivacy.message}</div>
         </div>
         <div className="form-group">
-            <button type="submit" className="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn">Solicitar</button>
+            <button type="submit" className="axil-btn btn-fill-primary btn-fluid btn-primary" name="submit-btn"><BiMailSend size={30} className="me-2"/> Solicitar</button>
         </div>
         <div className="form-group">
             {result ? <Result /> : null}

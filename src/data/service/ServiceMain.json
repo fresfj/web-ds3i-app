@@ -4,42 +4,182 @@
         "webp": "/images/icon/icon-32.webp",
         "title": "Aplicativos",
         "description": "Desenvolvemos aplicativos de alta qualidade e performance para Android e iOS.",
-        "cate": "Development"
+        "cate": "Development",
+        "about": {
+            "title": "Desenvolvimento de Aplicativos para iOS e Android",
+            "description": "Somos especializados em criação de aplicativos mobile (APP) para iOS e Android. A criação de um aplicativo exige conhecimento especializado em design de interface e desenvolvimento de software!"
+        },
+        "itens": [
+            {
+                "title": "Breafing e Funções",
+                "description": "Desenvolver o layout e funções do seu aplicativo pode ser uma tarefa difícil quando se tem um mercado tão concorrido com concorrentes nascendo a todos os dias."
+            },
+            {
+                "title": "Código e Desenvolvimento",
+                "description": "Com as telas definidas, entraremos no processo de desenvolvimento de aplicativo, no qual você poderá acompar essa etapa e realizar testes on-line."
+            },
+            {
+                "title": "Ativação, Teste e Publicação",
+                "description": "Com o Aplicativo pronto vamos iniciar os testes, depois de aprovado vamos inserir o aplicativo na Apple Store & Play Store."
+            }
+        ]
     },
     {
         "image": "/images/icon/icon-27.png",
         "webp": "/images/icon/icon-27.webp",
         "title": "Sites e sistemas",
         "description": "Desenvolvemos landing pages, sites responsivos, sistemas e aplicativos web.",
-        "cate": "Development"
+        "cate": "Development",
+        "about": {
+            "title": "Desenvolvimento de Sites e Sistemas",
+            "description": "Desenvolvemos sistemas web feitos sob medida para sua necessidade, desde de aplicações inteiras, redes sociais, plataformas de gestão para empresas até simples sites."
+        },
+        "itens": [
+            {
+                "title": "Sistemas online",
+                "description": "Sistemas online escritos em Angular e React, e todo pacote de frameworks necessários."
+            },
+            {
+                "title": "Landing pages",
+                "description": "Sites de tirar o folego, escritos em JavaScript e todo pacote de frameworks necessários."
+            },
+            {
+                "title": "Software Sob Medida",
+                "description": "Levantamento de funcionalidades e desenvolvimento de sistemas de acordo com a sua necessidade."
+            },
+            {
+                "title": "Layout Responsivo",
+                "description": "Nossos sistemas se adaptam muito bem em qualquer dispositivo, sejam eles desktops, tablets ou smartphones."
+            },
+            {
+                "title": "Sistemas sen Surpresas",
+                "description": "Seu sistema hospedado conosco, durante o período de desenvolvimento, para acompanhamento do seu projeto."
+            },
+            {
+                "title": "Desing Responsivo",
+                "description": "Sites com a tecnologia mais recente do mercado, versões adaptáveis a tela de cada dispositivo: PC, tablet e Smartphone."
+            },
+            {
+                "title": "Otimização SEO",
+                "description": "Seu site totalmente otimizado para os buscadores para melhor posicioná-lo na primeira página do Google e atrair milhares de visitantes."
+            },
+            {
+                "title": "Layout Personalizado",
+                "description": "Layouts exclusivos para a sua marca. Formas, cores, imagens, ícones, aparência atraente e moderna. Tudo pensado nos mínimos detalhes."
+            }
+        ]
     },
     {
         "image": "/images/icon/icon-28.png",
         "webp": "/images/icon/icon-28.webp",
         "title": "Design app",
         "description": "Desenvolvemos e planejamos o layout certo para o seu aplicativo.",
-        "cate": "Design"
+        "cate": "Design",
+        "about": {
+            "title": "Estudo e criação de interfaces",
+            "description": "Todo projeto de um edifício precisa de uma `planta` para saber exatamente onde as coisas devem ser construidas. No mundo do desenvolvimento as coisas não são diferentes. Estudamos e criamos interfaces complexas, analizando sempre qual será o fluxo mais intuitivo para o usuário final."
+        },
+        "itens": [
+            {
+                "title": "Mockup",
+                "description": "Fluxo completo de telas já com a identidade visual e todas as funcionalidades."
+            },
+            {
+                "title": "Experiência de uso",
+                "description": "Acompanhamento da experiência e interação que os usuários estão tendo com os aplicativos."
+            }
+        ]
     },
     {
         "image": "/images/icon/icon-41.png",
         "webp": "/images/icon/icon-41.webp",
         "title": "Interfaces",
         "description": "Desenvolvemos API`s de integrações e comunicação entre sistema, protótipos e estudo de usabilidade para o seu projeto.",
-        "cate": "Development"
+        "cate": "Development",
+        "about": {
+            "title": "Interfaces e Integrações",
+            "description": "Com sistemas cada vez mais departamentais, as empresas possuem diversas soluções instaladas para atender demandas específicas. A integração de sistemas internos e externos é cada vez mais necessária para otimizar processos ou gerar informações de suporte a decisão."
+        },
+        "itens": [
+            {
+                "title": "Webservices",
+                "description": "Um webservice é uma solução utilizada na integração de sistemas pela Internet utilizando um sistema padronizado de comunicações via XML. Embora cada um dos sistemas possam ter a sua 'linguagem', a comunicação entre eles pode de ser feita de forma padronizada por chamadas e requisições."
+            },
+            {
+                "title": "Protocolos REST, SOAP e RPC",
+                "description": "Os protocolos de comunicação RPC, SOAP e REST são as opções mais utilizadas nas arquiteturas orientadas a serviços. Baseados em estruturas JSON, XML e chamadas HTTP tais padrões possuem particularidades importantes que nossos profissionais lhe ajudarão a desenhar a melhor opção de integração."
+            },
+            {
+                "title": "APIs",
+                "description": "API (Application Programming Interface) é criada quando uma empresa deseja que outros softwares, sites ou aplicativos façam uso de serviços sem a intervenção manual de usuários. Sistemas de pagamento on-line, envio de mensagens e mapas são bons exemplos de integrações via API."
+            }
+        ]
     },
     {
         "image": "/images/icon/icon-33.png",
         "webp": "/images/icon/icon-33.webp",
         "title": "E-commerce",
         "description": "Soluções para loja virtual de alta performance, desenvolvimento personalizado, gestão de produtos, integrações e vendas.",
-        "cate": "Development"
+        "cate": "Development",
+        "about": {
+            "title": "E-commerce a sua Loja Virtual",
+            "description": "Com base em seus objetivos e necessidades específicas, nós entregamos soluções de comércio eletrônico personalizadas de forma completa. Você vai ter uma solução web estável e segura com todos os recursos de comércio eletrônico que são necessários."
+        },
+        "itens": [
+            {
+                "title": " Layout personalizado e responsivo",
+                "description": "Criação de layout personalizado e preparado para ser visualizado em tablets e smartphones."
+            },
+            {
+                "title": "Cadastro de produtos",
+                "description": "Você poderá cadastrar, alterar e excluir produtos quando quiser, pelo painel de controle da sua loja."
+            },
+            {
+                "title": "Diversas formas de pagamento",
+                "description": "Em nossa plataforma, você terá muitas facilidades com as formas de pagamento."
+            },
+            {
+                "title": "Integrações",
+                "description": "Auxiliamos você com diversas integrações e recursos para fortalecer ainda mais sua loja virtual."
+            }
+        ]
     },
     {
         "image": "/images/icon/icon-40.png",
         "webp": "/images/icon/icon-40.webp",
         "title": "Consultoria",
         "description": "Oferecemos uma consultoria completa na criação de novos projetos digitais, apoiamos nossos clientes no desenvolvimento.",
-        "cate": "Business"
+        "cate": "Business",
+        "about": {
+            "title": "Consultoria e Outsourcing",
+            "description": "Com o outsourcing, você reduz os custos de mão de obra direta, contratando, por terceirização, um profissional altamente capacitado e com conhecimento específico na tecnologia que você utiliza. Nossa equipe está habilitada para executar a implantação, administração de projetos, desenvolvimento, suporte e manutenção de sistemas e administração de bancos de dados (DBA)."
+        },
+        "itens": [
+            {
+                "title": "Onboarding",
+                "description": "Primeiros passos assim que o cliente fecha o contrato. Agendamento da primeira reunião de briefing, alinhamento de processos, expectativas e entregas.."
+            },
+            {
+                "title": "Consultoria",
+                "description": "Processo constante durante todo o projeto, para indicar as estratégias mais apropriadas para o negócio de acordo com os objetivos desejados."
+            },
+            {
+                "title": "Planejamento",
+                "description": "Criação de um Cronograma com todas as estratégias essenciais para o negócio de acordo com o público e budget pré-determinados."
+            },
+            {
+                "title": "Estratégia",
+                "description": "Organização, criação e personalização de todas as ferramentas, conteúdos e mídias necessárias para colocar o projeto para rodar."
+            },
+            {
+                "title": "Execução",
+                "description": "Mão na massa. Assim que o desenvolvimento de todos os conteúdos e artes são finalizados, damos início na implementação de todas as estratégias."
+            },
+            {
+                "title": "Resultados",
+                "description": "Análise do desempenho das estratégias para verificar se as metas estão sendo atingidas e otimização de campanhas para potencializar o ROI."
+            }
+        ]
     },
     {
         "image": "/images/icon/icon-1.png",

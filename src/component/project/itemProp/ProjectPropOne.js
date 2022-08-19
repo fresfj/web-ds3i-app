@@ -4,7 +4,6 @@ import { slugify } from '../../../utils';
 import LazyLoad from 'react-lazyload';
 
 const PropOne = ({projectStyle, portfolio}) => {
-	
     return (
 		<>
 			<div className={`project-grid ${projectStyle}`}>

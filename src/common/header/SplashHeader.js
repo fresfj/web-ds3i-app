@@ -23,7 +23,7 @@ const SplashHeader = () => {
                     <ul className="list-unstyled">
                         <li className="buy-btn">
                             <a href="https://wa.me/554199601055?text=Gostaria%20de%20de%20o%20um%20do%20orçamento" className="axil-btn btn-fill-primary">
-                            <FaWhatsapp size={22} className="me-2" /> Chama no Whats</a>
+                            <FaWhatsapp size={30} className="me-2" /> Chama no Whats</a>
                         </li>
                     </ul>
                     </div>
