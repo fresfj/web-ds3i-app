@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from "prop-types";
 import { Helmet, HelmetData } from 'react-helmet-async';
-import { Person } from "schema-dts";
-import { helmetJsonLdProp } from "react-schemaorg";
 const helmetData = new HelmetData({});
 
 const SEO = ( { title } ) => {
-    const structuredJSON = JSON.stringify({
+    const structuredJSON = JSON.stringify(
+    {
         "@context": "https://schema.org",
         "@type": "Organization",
         "contactPoint" : [
@@ -34,8 +33,18 @@ const SEO = ( { title } ) => {
         "url" : "https://www.ds3i.com.br",
         "email": "francisco(at)ds3i.com.br",
         "telephone": "+5541999601055",
-        "name": "DS3I - Desenvolvimento de Aplicativos e Sistemas"
-    });
+        "name": "DS3I - Desenvolvimento de Aplicativos e Sistemas",
+        "slogan": "Desenvolvimento de soluções digitais para o seu negócio",
+        "logo": "https://www.ds3i.com.br/images/logo/azul.svg",
+        "sameAs": [
+            "https://www.facebook.com/OficialDs3i/",
+            "https://twitter.com/OficialDs3i/",
+            "https://www.linkedin.com/company/ds3i/",
+            "https://www.instagram.com/ds3i_/"
+        ]
+      }
+    
+    );
     
     return (
         <>
