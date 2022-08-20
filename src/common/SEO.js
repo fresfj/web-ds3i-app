@@ -36,6 +36,10 @@ const SEO = ( { title } ) => {
         "name": "DS3I - Desenvolvimento de Aplicativos e Sistemas",
         "slogan": "Desenvolvimento de soluções digitais para o seu negócio",
         "logo": "https://www.ds3i.com.br/images/logo/azul.svg",
+        "image": [
+            "https://firebasestorage.googleapis.com/v0/b/apps-ds3i.appspot.com/o/123244219_1721507951345044_3679130470784341172_n.png?alt=media&token=3440767f-8615-4e56-945c-7b194f2f9697",
+            "https://firebasestorage.googleapis.com/v0/b/apps-ds3i.appspot.com/o/123244219_1721507951345044_3679130470784341172_n.png?alt=media&token=3440767f-8615-4e56-945c-7b194f2f9697"
+        ],
         "sameAs": [
             "https://www.facebook.com/OficialDs3i/",
             "https://twitter.com/OficialDs3i/",
@@ -59,7 +63,7 @@ const SEO = ( { title } ) => {
                 <meta name="google-site-verification" content="3JZqC_yKbhW4iMDR8mXddSBENrpOebJ7i4qhOkYT6Ak" />
                 <meta name="AdsBot-Google" content="noindex" />
                 <meta name="googlebot" content="noindex" />
-                <script className='structured-data-list' type="application/ld+json">{structuredJSON}</script>
+                <script type="application/ld+json">{structuredJSON}</script>
             </Helmet>
         </>
     )

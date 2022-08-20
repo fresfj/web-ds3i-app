@@ -13,6 +13,14 @@
     position: relative;
     z-index: 1;
 
+    @media #{$smlg-device} {
+        padding: 18px 35px;
+    }
+
+    @media #{$large-mobile} {
+        padding: 18px 15px;
+    }
+
     &.btn-borderd {
         border: var(--border-gray);
         color: var(--color-dark);
