@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: ds3i.com.br
+Token: 5643ff010a00716bedd14cf4bef748705d3b43a8169ebd85948806a67984a417
